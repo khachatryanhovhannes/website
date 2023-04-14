@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    border: 0.1px solid black;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 12px 59px 15px 0;
+}
+
+.nav ul li {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 32px;
+    color: #636769;
+}
+
+.nav ul button {
+    width: 158px;
+    height: 54px;
+    background: #6157AB;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    border: none;
+    margin-left: 12px;
+}
+
+.headerMain {
+    margin-top: 83px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.headerText {
+    padding-left: 60px;
+    margin-top: 13px;
+}
+
+.headerText h1 {
+    width: 560px;
+    height: 212px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 70px;
+    letter-spacing: 1px;
+    color: #363B3D;
+}
+
+.headerText p {
+    margin-top: 47px;
+    width: 560px;
+    height: 68px;
+    left: 60px;
+    top: 439px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 0.05px;
+    color: #636769;
+}
+
+.headerText .buttons {
+    margin-top: 35px;
+}
+
+.headerText .but1 {
+    width: 158px;
+    height: 54px;
+    background: #6157AB;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    border: none;
+    color: #FFFFFF;
+}
+
+.headerText .but2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #6157AB;
+    border: none;
+    margin-left: 48px;
+    border-bottom: 1px solid #6157AB;
+}
+
+.headerText h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #96979A;
+    margin-top: 120px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 560px;
+}
+
+.empower {
+    border: .11px solid transparent;
+    background: #F5F4F2;
+}
+
+.empower>h1 {
+    margin-top: 72px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.675px;
+    color: #333333;
+}
+
+.empButs {
+    margin-top: 47px;
+    display: flex;
+    padding: 0 105px;
+    justify-content: space-between;
+}
+
+.empButs button {
+    padding: 15px 25px;
+    background: #ffffff;
+    border: 1px solid #6157AB;
+    border-radius: 6.8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 2.32px;
+    text-transform: uppercase;
+    color: #6157AB;
+}
+
+.empButs .b1 {
+    background: #ECEAF8;
+}
+
+.empowerArt {
+    margin: 55px 60px;
+    padding: 75px 74px 63px;
+    background: #FFFFFF;
+    border-radius: 19px 19px 0px 0px;
+}
+
+.empowerArt>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.empowerArt .text {
+    margin-left: 85px;
+    border-top: 1px solid #C9D3D9;
+}
+
+.empowerArt .text h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2.32px;
+    text-transform: uppercase;
+    color: #574D9C;
+    margin-top: 33px;
+}
+
+.empowerArt .text h1 {
+    margin-top: 97px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #363B3D;
+}
+
+.empowerArt .text p {
+    margin-top: 32px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 30px;
+    color: #636769;
+}
+
+.empowerArt .text button {
+    margin-top: 30px;
+    width: 223px;
+    height: 54px;
+    background: #6157AB;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    border: none;
+    color: #FFFFFF;
+}
+
+.empower .keep{
+    margin-top: 85px;
+    border-top: 1px solid #C9D3D9   ;
+}
