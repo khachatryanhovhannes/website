@@ -971,4 +971,38 @@
         width: 45%;
         margin-top: 10px;
     }
+    .empowerArt{
+        margin: 3px;
+        padding: 3px;
+        margin-top: 20px;
+    }
+    .goodCompany{
+        margin: 3px;
+        padding: 3px;
+        margin-top: 20px;
+    }
+    .solution{
+        margin: 3px;
+        padding: 3px;
+        margin-top: 20px;
+    }
+    .tapAwey{
+        margin: 3px;
+        padding: 3px;
+        margin-top: 20px;
+    }
+    .footer{
+        margin: 3px;
+        padding: 3px;
+        margin-top: 20px;
+    }
+    h1, h2{
+        font-size: 13px !important;
+    }
+    h3, h4{
+        font-size: 12px !important
+    }
+    h5, h6, p{
+        font-size: 10px !important
+    }
 }
