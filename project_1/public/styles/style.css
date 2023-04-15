@@ -7,7 +7,6 @@
 .container {
     width: 1200px;
     margin: 0 auto;
-    border: 0.1px solid black;
 }
 
 .nav ul {
@@ -42,6 +41,7 @@
     text-transform: capitalize;
     color: #FFFFFF;
     border: none;
+    outline: none;
     margin-left: 12px;
 }
 
@@ -59,7 +59,6 @@
 
 .headerText h1 {
     width: 560px;
-    height: 212px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -72,7 +71,6 @@
 .headerText p {
     margin-top: 47px;
     width: 560px;
-    height: 68px;
     left: 60px;
     top: 439px;
     font-family: 'Roboto';
@@ -89,7 +87,7 @@
 }
 
 .headerText .but1 {
-    width: 158px;
+    width: 170px;
     height: 54px;
     background: #6157AB;
     border-radius: 5px;
@@ -115,6 +113,7 @@
     border: none;
     margin-left: 48px;
     border-bottom: 1px solid #6157AB;
+    border-radius: 0;
 }
 
 .headerText h3 {
@@ -134,6 +133,10 @@
     align-items: center;
     justify-content: space-between;
     width: 560px;
+}
+
+.main {
+    background-color: #F5F4F2;
 }
 
 .empower {
@@ -181,7 +184,7 @@
 }
 
 .empowerArt {
-    margin: 55px 60px;
+    margin: 55px 60px 0;
     padding: 75px 74px 63px;
     background: #FFFFFF;
     border-radius: 19px 19px 0px 0px;
@@ -245,7 +248,727 @@
     color: #FFFFFF;
 }
 
-.empower .keep{
+.empower .keep {
+    background: #FFFFFF;
     margin-top: 85px;
-    border-top: 1px solid #C9D3D9   ;
+    border-top: 1px solid #C9D3D9;
+    padding: 0 80px;
+
+}
+
+.empower .keep .keepCards {
+    margin-top: 65px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card .image {
+    height: 70px;
+    width: 70px;
+    background-color: #574D9C;
+    text-align: center;
+    padding-top: 18px;
+}
+
+.card p {
+    width: 100%;
+    text-align: center;
+    margin-top: 22px;
+}
+
+.goodCompany {
+    margin: 0 60px;
+    border: 0.1px solid transparent;
+    background: #E3E6F9;
+    padding: 0 60px;
+}
+
+.goodCompany>h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 51px;
+    line-height: 65px;
+    text-align: center;
+    text-align: center;
+    letter-spacing: 0.675px;
+    color: #323A5B;
+    margin-top: 70px;
+}
+
+.goodCompany .feedback {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 67px;
+    padding-bottom: 67px;
+    border-bottom: 1px solid #B2A9EF;
+}
+
+.feedText {
+    margin-right: 40px;
+}
+
+.feedText h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.005px;
+    color: #1E2224;
+}
+
+.feedBackAutorText p {
+    margin-left: 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #636769;
+}
+
+.feedBackAutorText h3 {
+    margin-left: 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #636769;
+}
+
+.feedBackAutor {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #C9C9C9;
+    padding-bottom: 46px;
+}
+
+.feedback h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #363B3D;
+    margin-top: 44px;
+}
+
+.feedback button {
+    background: #FFFFFF;
+    border: 1px solid #574D9C;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    color: #574D9C;
+    padding: 13px 25px;
+    margin: 28px auto;
+    width: 148px;
+    display: block;
+}
+
+.users {
+    padding: 0 30px 88px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.users h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 69px;
+    line-height: 104px;
+    color: #323A5B;
+}
+
+.users p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 17px;
+    color: #323A5B;
+}
+
+.solution {
+    padding: 72px 20px 0;
+    background: #574D9C;
+    border-radius: 0px 0px 19px 19px;
+    margin: 0 60px;
+}
+
+.solution>h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 51px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.675px;
+    color: #FFFFFF;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 0 40px;
+}
+
+.buttons button {
+    padding: 15px 31px;
+    border: 1px solid #FFFFFF;
+    border-radius: 6.8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    background: transparent;
+    letter-spacing: 2.32px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.buttons .b1 {
+    color: #574D9C;
+    background: #FFFFFF;
+}
+
+.call {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 88px;
+    align-items: flex-start;
+}
+
+.call img {
+    margin-top: 20px;
+}
+
+.article {
+    padding: 32px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.articleLeft .image {
+    border: 0.1px solid rgba(255, 255, 255, 0.083);
+    outline: none;
+    background-image: url('../images/call.png');
+    width: 324px;
+    height: 175px;
+}
+
+.articleLeft .image .r {
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    background: #7569CF;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.articleLeft .image .text {
+    margin-top: 96px;
+    text-align: right;
+    display: flex;
+    justify-content: end;
+}
+
+.articleLeft .image .text span {
+    display: inline-block;
+    background: #333333;
+    padding: 4px 15px 8px 18px;
+    width: 137px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #ECEAF8;
+}
+
+.articleLeft h1 {
+    margin-top: 28px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 30px;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    color: #363B3D;
+    text-align: center;
+}
+
+.appImage {
+    text-align: right;
+    padding-right: 36px;
+    margin-top: 26px;
+    padding-bottom: 29px;
+    border-bottom: 1px solid #C7C1F3;
+}
+
+.articleLeft table tr {
+    padding-top: 35px;
+}
+
+.articleLeft table tr td:nth-child(1) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 30px;
+    color: #363B3D;
+}
+
+.articleLeft table tr td:nth-child(2) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 49px;
+    color: #636769;
+}
+
+
+.articleRight {
+    margin-left: 48px;
+}
+
+.articleRight h1 {
+    margin-top: 120px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 0.16px;
+    color: #2B2B2B;
+}
+
+.articleRight p {
+    margin-top: 37px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #636769;
+}
+
+.articleRight button {
+    border: none;
+    margin-top: 77px;
+    background: #7569CF;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 11px 24px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+
+.articleRight h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #6157AB;
+    border-top: 1px solid #9AA6AC;
+    padding-top: 25px;
+    margin-top: 63px;
+}
+
+.control {
+    display: flex;
+    padding: 40px 0 88px;
+    justify-content: center;
+}
+
+.control div {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    margin: 0 12px;
+}
+
+.control div.active {
+    background-color: #FFFFFF;
+}
+
+.tapAwey {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 83px 122px 0 122px;
+}
+
+.tapAweyText {
+    margin-right: 90px;
+}
+
+.tapAweyText h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #363B3D;
+    margin-top: 35px;
+}
+
+.tapAweyText p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #363B3D;
+    margin-top: 35px;
+}
+
+.tapAweyText button {
+    background: #000000;
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    padding: 9px 44px;
+    display: block;
+    margin: 45px auto;
+}
+
+.footer {
+    background-color: #050302;
+    padding: 60px 60px 80px;
+}
+
+.footerNav {
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+}
+
+.footerNav ul {
+    list-style-type: none;
+}
+
+.footerNav ul h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.footerNav ul li {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.bbb p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #F5F4F2;
+}
+
+.terms span {
+    margin-top: 7px;
+    display: inline-block;
+    margin-right: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+
+}
+
+.terms p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #E7ECEE;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 113px;
+}
+
+.webs img {
+    margin: 0 26px;
+    margin-top: 7px;
+}
+
+@media screen and (max-width:1200px) {
+    .container {
+        width: 100%;
+    }
+    .headerText h1{
+        width: auto;
+        font-size: 40px;
+    }
+    .headerText p{
+        width: auto;
+    }
+    .headerText .but2 {
+        margin-left: 10px;
+    }
+    .buttons{
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .buttons button{
+        width: 100%;
+    }
+    .headerMain img{
+        width: 45%;
+    }
+    .headerText{
+        width: 40%;
+    }
+    .headerText{
+        flex-wrap: wrap;
+    }
+    .empButs button{
+        font-size: 13px;
+        padding: 7px 13px;
+    }
+    .call .article{
+        justify-content: cen    ter;
+        flex-wrap: wrap;
+    }
+    .articleLeft{
+        width: 100%;
+    }
+    .articleRight{
+        width: 100%;
+    }
+    .footerNav ul li{
+        font-size: 13px;
+    }
+    .empowerArt img{
+        width: 40%;
+    }
+    .empowerArt div{
+        align-items: flex-start;
+    }
+    .tapAwey img{
+        width: 40%;
+    }
+    .call>img{
+        width: 10%;
+    }
+    .users h1{
+        font-size: 50px;
+    }
+    .buttons button{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .headerMain{
+        flex-wrap: wrap;
+    }
+    .headerText{
+        width: 100%;
+        text-align: center;
+    }
+    .headerMain img{
+        width: 100%;
+    }
+    .icons{
+        width: 100%;
+    }
+    .empower>h1{
+        font-size: 30px;
+    }
+    .empButs{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .empButs button{
+        width: 30%;
+        margin: 10px 10px;
+    }
+    .empowerArt>div{
+        flex-wrap: wrap;
+    } 
+    .empowerArt img{
+        width: 100%;
+    }
+    .goodCompany .feedback{
+        flex-wrap: wrap;
+    }
+.feedText{
+    width: 1000%;
+}
+    .goodCompany .feedback>img{
+        width: 100%;
+    }
+
+    .users h1{
+        font-size: 30px;
+    }
+    .users p{
+        font-size: 10px;
+        margin-top: 0px;
+    }
+    .call>img{
+        width: 5%;
+    }
+    .footerNav{
+        padding-right: 0;
+    }
+    .webs img{
+        margin: 0 3px;
+    }
+    .empButs{
+        padding: 0;
+    }
+    .nav ul li{
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .tapAwey{
+        flex-wrap: wrap;
+        padding: 83 60px;
+    }
+    .tapAweyText{
+        margin-right: 0;
+        width: 100%;
+    }
+    .tapAwey img{
+        width: 100%;
+    }
+    .icons{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .icons img{
+        width: 30%;
+    }
+    .footerNav{
+        flex-wrap: wrap;
+    }
+    .footerNav img{
+        width: 30%;
+    }
+    .footerNav ul{
+        width: 30%;
+        margin-top: 10px;
+    }
+    .copyright{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .bbb{
+        width: 100%;
+        text-align: center;
+    }
+    .terms{
+        width: 100%;
+        text-align: center;
+    }
+    .articleLeft .image{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:640px) {
+    .nav ul{
+        flex-wrap: wrap;
+        justify-content: left;
+        margin-left: 20px;
+    }
+    .nav ul li{
+        width: 100%;
+    }
+    .empowerArt .text{
+        margin-left: 0;
+    }
+    .empower .keep{
+        padding: 0;
+    }
+    .users{
+        flex-wrap: wrap;
+    }
+    .users .number{
+        width: 100%;
+        text-align: center;
+    }
+    .call>img{
+        display: none;
+    }
+        .footerNav img{
+        width: 45%;
+    }
+    .footerNav ul{
+        width: 45%;
+        margin-top: 10px;
+    }
 }
