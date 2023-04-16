@@ -7,7 +7,6 @@
 .container {
     width: 1200px;
     margin: 0 auto;
-    height: 10000px;
 }
 
 .navAndSign {
@@ -404,4 +403,187 @@ color: #FAF8F7;
     display: flex;
     justify-content: space-between;
     margin-top: 28px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 100%;
+    }
+    .headerMain img{
+        width: 40%;
+    }
+    .find img{
+        width: 40%;
+    }
+
+    .saved{
+        flex-wrap: wrap;
+    }
+    .saved p{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .saved img{
+        margin: 0 5px
+    }
+    .nav ul{
+        margin-right: 80px;
+    }
+    .headerMain{
+        align-items: flex-start;
+    }
+    .state{
+        padding: 60px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav ul{
+        margin-right: 35px;
+    }
+    .nav ul li{
+        margin: 0 12px
+    }
+    .headerMainText p{
+        width: 100%;
+    }
+    .headerMainText h1{
+        font-size: 50px;
+    }
+    .saved img {
+        width: 20%;
+        margin: 0 30px;
+    }
+    .closeDeals{
+        padding: 0 20px;
+    }
+    .state img{
+        width: 50%;
+    }
+    .stateText li{
+        font-size: 20px;
+        padding: 10px 0
+    }
+    .easyVendor{
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+    .find img{
+        width: 50%;
+    }
+    .find ul{
+        width: 40%;
+    }
+    .find ul li{
+        width: 100%;
+        font-size: 20px;
+        padding: 10px 0
+    }
+    .trusted h1{
+        font-size: 50px;
+    }
+    .trusted article{
+        width: 90%;
+        padding: 20px 40px;
+    }
+    .everything h1{
+        font-size: 50px;
+    }
+    .footer{
+        padding: 50px 20px;
+    }
+    .footer>div{
+        margin: 0 5px;
+    }
+    .easyVendor h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .navAndSign{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav ul{
+        margin-bottom: 20px;
+    }
+    .headerMain{
+        padding: 60px 20px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .headerMain img{
+        width: 100%;
+    }
+    .state{
+        padding: 40px 20px;
+    }
+    .stateText{
+        margin-top: 0;
+    }
+
+    .saved img{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .nav ul{
+        flex-wrap: wrap;
+        margin-right: 0;
+    }
+    .nav ul li{
+        width: 100%;
+        text-align: center;
+    }
+    .sign span{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .sign{
+        text-align: center;
+    }
+    .saved img{
+        width: 80%;
+    }
+    .state{
+        flex-wrap: wrap;
+    }
+    .state img{
+        width: 100%;
+    }
+    .find{
+        padding: 0 20px 40px;
+        flex-wrap: wrap;
+    }
+    .find ul{
+        width: 100%;
+    }
+    .find img{
+        width: 100%;
+    }
+    .trusted article>p{
+        font-size: 20px;
+    }
+    .everything{
+        padding: 40px 20px;
+    }
+    .everything h1{
+        font-size: 20px;
+    }
+    .footer{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer>div{
+        width: 100%;
+        text-align: center;
+    }
+    .footer>div>div{
+        width: 30%;
+        margin: 10px auto;
+    }
 }
