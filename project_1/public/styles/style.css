@@ -763,6 +763,9 @@
     .container {
         width: 100%;
     }
+    .empowerArt>div>img{
+        width: 100%;
+    }
     .headerText h1{
         width: auto;
         font-size: 40px;
@@ -855,9 +858,7 @@
     .empowerArt>div{
         flex-wrap: wrap;
     } 
-    .empowerArt img{
-        width: 100%;
-    }
+    
     .goodCompany .feedback{
         flex-wrap: wrap;
     }
@@ -947,6 +948,7 @@
     }
     .nav ul li{
         width: 100%;
+        text-align: center;
     }
     .empowerArt .text{
         margin-left: 0;
@@ -972,28 +974,28 @@
         margin-top: 10px;
     }
     .empowerArt{
-        margin: 3px;
-        padding: 3px;
+        margin: 5px;
+        padding: 5px;
         margin-top: 20px;
     }
     .goodCompany{
-        margin: 3px;
-        padding: 3px;
+        margin: 5px;
+        padding: 5px;
         margin-top: 20px;
     }
     .solution{
-        margin: 3px;
-        padding: 3px;
+        margin: 5px;
+        padding: 5px;
         margin-top: 20px;
     }
     .tapAwey{
-        margin: 3px;
-        padding: 3px;
+        margin: 5px;
+        padding: 5px;
         margin-top: 20px;
     }
     .footer{
-        margin: 3px;
-        padding: 3px;
+        margin: 5px;
+        padding: 5px;
         margin-top: 20px;
     }
     h1, h2{
@@ -1004,5 +1006,20 @@
     }
     h5, h6, p{
         font-size: 10px !important
+    }
+    .headerText{
+        padding-left: 5px;
+    }
+    .nav ul button{
+        margin-top: 20px;
+        display: block;
+        margin: auto;
+    }
+    .article{
+        margin: 5px 10px 5px;
+    }
+    .footerNav{
+        text-align: center;
+        padding: 10px 5px;
     }
 }
