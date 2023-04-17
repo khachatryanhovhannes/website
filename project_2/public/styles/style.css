@@ -522,6 +522,8 @@ color: #FAF8F7;
     }
     .stateText{
         margin-top: 0;
+        width: 100%;
+        text-align: center;
     }
 
     .saved img{
@@ -562,6 +564,7 @@ color: #FAF8F7;
         width: 100%;
     }
     .find img{
+        text-align: center;
         width: 100%;
     }
     .trusted article>p{
@@ -581,6 +584,8 @@ color: #FAF8F7;
     .footer>div{
         width: 100%;
         text-align: center;
+        margin-top: 20px;
+        border-top: 1px solid white;
     }
     .footer>div>div{
         width: 30%;
