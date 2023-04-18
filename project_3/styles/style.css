@@ -7,7 +7,6 @@
 .container {
     width: 1200px;
     margin: 0 auto;
-    height: 10000px;
 }
 
 .logoNavSign {
@@ -748,3 +747,349 @@
 .footer>img{
     margin-top: 30px;
 }
+
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 100%;
+    }
+
+    .headerMainText{
+        width: 45%;
+    }
+    .headerMain img{
+        width: 47%;
+    }
+    .pickParty img{
+        width: 47%;
+    }
+    .headerMainText p{
+        width: auto;
+    }
+    .pickPartyText{
+        margin-left: 40px;
+        width: 45%;
+    }
+    .articles article{
+        width: 30%;
+    }
+    .articles article img{
+        width: 100%;
+    }
+    .talkOfText{
+        width: 45%;
+    }
+    .talkOf{
+        align-items: center;
+    }
+    .talkOf>img{
+        width: 47%;
+    }
+    .subsribe article{
+        width: 48%;
+    }
+    .partyFriendsText{
+        width: 45%;
+    }
+    .partyFriends img{
+        width: 47%;
+    }
+    .footer>img{
+        width: 100%;
+    }
+    .pickParty{
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .logoNavSign{
+        flex-wrap: wrap;
+    }
+    .navSign{
+        margin-top: 20px;
+    }
+    .headerMainText h1{
+        font-size: 40px;
+    }
+    .headerMain{
+        padding: 60px 60px 80px;
+    }
+    .headerMainText .buttons button{
+        font-size: 13px;
+    }
+    .articles h2{
+        font-size: 25px;
+    }
+    .subsribe p{
+        width: auto;
+        margin-left: 10px;
+        height: 400px;
+    }
+    .partyFree button{
+        margin-top: 33px;
+    }
+    .footerOneNav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .email{
+        margin: 10px;
+    }
+    .footer h1{
+        text-align: center;
+    }
+    .footerTwoNav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .icons{
+        margin-top: 20px;
+    }
+    .privaty{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .privaty div{
+        margin-top: 20px;
+    }
+    .partyFriendsText h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .navSign{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logoNavSign{
+        justify-content: center;
+    }
+    .sign{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .headerMainText h1{
+        line-height: 60px;
+        font-size: 30px;
+    }
+    .headerMain img{
+        margin-top: 0px;
+    }
+    .headerMainText p{
+        margin: 20px 0; 
+    }
+    .headerMainText h3{
+        height: auto;
+        width: auto;
+    }
+    .headerMainText .buttons button{
+        margin-top: 20px;
+    }
+    .pickPartyText h1{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .pickPartyText h2{
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    .pickPartyText p{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .pickPartyText h3{
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    .featuredParty .title h1{
+        font-size: 40px;
+    }
+    .articles{
+        flex-wrap: wrap;
+    }
+    .articles article:nth-child(1){
+        width: 100%;
+    }
+    .articles article:nth-child(1) p{
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .articles article{
+        width: 48%;
+        margin-top: 20px;
+    }
+    .talkOf{
+        flex-wrap: wrap;
+    }
+    .talkOfText{
+        width: 100%;
+    }
+    .talkOf>img{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .startParty>p{
+        width: auto;
+    }
+    .subsribe{
+        flex-wrap: wrap;
+    }
+    .subsribe article{
+        width: 100%;
+    }
+    .subsribe p{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .nav ul{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .nav ul li{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .headerMain{
+        flex-wrap: wrap;
+    }
+    .headerMainText{
+        width: 100%;
+        text-align: center;
+    }
+    .headerMain img{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .pickParty{
+        flex-wrap: wrap;
+    }
+    .pickParty img{
+        width: 100%;
+    }
+    .pickPartyText{
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .featuredParty .title{
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .featuredParty .title h1{
+        width: 100%;
+    }
+    .articles article{
+        width: 100%;
+    }
+    .articles p{
+        height: auto;
+    }
+    .startParty{
+        text-align: center;
+    }
+    .startParty>h1{
+        font-size: 30px;
+    }
+    .startParty>p{
+        font-size: 20px;
+    }
+    .partyFriends{
+        flex-wrap: wrap;
+    }
+    .partyFriendsText{
+        width: 100%;
+        text-align: center;
+    }
+    .partyFriends img{
+        width: 100%;
+    }
+    .talkOfText{
+        text-align: center;
+    }
+    .footer h1{
+        font-size: 30px;
+    }
+    .footerOneNav ul{
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+    }
+    .footerOneNav ul li{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .footerTwoNav ul{
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footerTwoNav ul li{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .privaty div{
+        flex-wrap: wrap;
+    }
+    .privaty div span{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .sign{
+        text-align: center;
+    }
+    .start{
+        margin-right: 0;
+    }
+    .logoNavSign{
+        padding: 20px;
+    }
+    .headerMain{
+        padding: 20px;
+    }
+    .pickParty{
+        padding: 20px;
+    }
+    .featuredParty{
+        padding: 10px;
+    }
+    .featuredParty .title h1{
+        font-size: 25px;
+    }
+    .viewText h2{
+        margin: 0;
+    }
+    .subsribe h1{
+        font-size: 25px;
+    }
+    .subsribe article>div{
+        flex-wrap: wrap;
+    }
+    .email span{
+        padding-right: 150px;
+    }
+    .footer{
+        padding: 20px;
+    }
+    .startParty{
+        padding: 20px;
+    }
+    .partyFriends{
+        padding: 20px;
+    }
+    .email{
+        width: 255px;
+    }
+    .icons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+} 
