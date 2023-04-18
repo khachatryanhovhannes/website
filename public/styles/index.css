@@ -29,6 +29,9 @@ html {
 }
 
 .nameAndLogo img {
+    background-color: white;
+    border-radius: 50%;
+    border: 10px solid black;
     width: 150px;
     opacity: 0.8;
 }
@@ -261,6 +264,33 @@ div.g {
 .works{
     padding: 20px;
     background-color: #cecece;
+}
+
+.htmlCss{
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 1px solid #5c5c5c;
+}
+
+.htmlCss h2, .js h2{
+    font-size: 20px;
+}
+.project{
+    margin-top: 20px;
+}
+
+.project a, .js a{
+    display: inline-block;
+    padding: 10px;
+    background-color: #5c5c5c;
+    color: #cecece;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.project a:hover, .js a:hover{
+    color: #fff;
 }
 
 .con h1{

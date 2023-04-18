@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="input"></div>   
+        <table>
+            <tr>
+                <td onclick="typeNumber(1)">1</td>
+                <td onclick="typeNumber(2)">2</td>
+                <td onclick="typeNumber(3)">3</td>
+                <td onclick="enterOperation('+')">+</td>
+            </tr>
+            <tr>
+                <td onclick="typeNumber(4)">4</td>
+                <td onclick="typeNumber(5)">5</td>
+                <td onclick="typeNumber(6)">6</td>
+                <td onclick="enterOperation('-')">-</td>
+            </tr>
+            <tr>
+                <td onclick="typeNumber(7)">7</td>
+                <td onclick="typeNumber(8)">8</td>
+                <td onclick="typeNumber(9)">9</td>
+                <td  onclick="enterOperation('*')">*</td>
+            </tr>
+            <tr>
+                <td onclick="clearIn()">C</td>
+                <td onclick="typeNumber(0)">0</td>
+                <td onclick="result()">=</td>
+                <td onclick="enterOperation('/')">/</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
