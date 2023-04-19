@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Keyboard</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="input" id="root"></div>
+        <div id="keyboard">
+            <div id="numbers">
+                <span onclick="typing(this)">1</span>
+                <span onclick="typing(this)">2</span>
+                <span onclick="typing(this)">3</span>
+                <span onclick="typing(this)">4</span>
+                <span onclick="typing(this)">5</span>
+                <span onclick="typing(this)">6</span>
+                <span onclick="typing(this)">7</span>
+                <span onclick="typing(this)">8</span>
+                <span onclick="typing(this)">9</span>
+                <span onclick="typing(this)">0</span>
+            </div>
+            <div>
+                <span onclick="typing(this)">q</span>
+                <span onclick="typing(this)">w</span>
+                <span onclick="typing(this)">e</span>
+                <span onclick="typing(this)">r</span>
+                <span onclick="typing(this)">t</span>
+                <span onclick="typing(this)">y</span>
+                <span onclick="typing(this)">u</span>
+                <span onclick="typing(this)">i</span>
+                <span onclick="typing(this)">o</span>
+                <span onclick="typing(this)">p</span>
+            </div>
+            <div>
+                <span onclick="typing(this)">a</span>
+                <span onclick="typing(this)">s</span>
+                <span onclick="typing(this)">d</span>
+                <span onclick="typing(this)">f</span>
+                <span onclick="typing(this)">g</span>
+                <span onclick="typing(this)">h</span>
+                <span onclick="typing(this)">j</span>
+                <span onclick="typing(this)">k</span>
+                <span onclick="typing(this)">l</span>
+            </div>
+            <div>
+                <span onclick="capsLook(this)"><i class="fa-solid fa-circle-up"></i></span>
+                <span onclick="typing(this)">z</span>
+                <span onclick="typing(this)">x</span>
+                <span onclick="typing(this)">c</span>
+                <span onclick="typing(this)">v</span>
+                <span onclick="typing(this)">b</span>
+                <span onclick="typing(this)">n</span>
+                <span onclick="typing(this)">m</span>
+                <span onclick="deleting()"><i class="fa-solid fa-delete-left"></i></span>
+            </div>
+            <div class="space">
+                <p onclick="typing(this)"> </p>
+            </div>
+        </div>
+    </div>   
+     <script src="https://kit.fontawesome.com/b67d1921a9.js" crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
