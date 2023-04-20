@@ -1,12 +1,12 @@
 "use strict"
 function gallerySlider(control) {
     if (control === "right") {
-        let gallery_1 = document.getElementById("gallery_1");
-        gallery_1.style = "animation-name:gallerySlider; animation-duration:3s; animation-fill-mode:forwards";
+        let gallery_1 = document.getElementById("galleryAnimation");
+        gallery_1.style = "justify-content: end; padding-right:80px";
     }
     else {
-        let gallery_1 = document.getElementById("gallery_1");
-        gallery_1.style = "animation-name:gallerySliderNone; animation-duration:3s; animation-fill-mode:forwards";
+        let gallery_1 = document.getElementById("galleryAnimation");
+        gallery_1.style = "justify-content: start";
     }
 }
 

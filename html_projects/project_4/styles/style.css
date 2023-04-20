@@ -173,7 +173,6 @@
     background: #282828;
     display: flex;
     justify-content: left;
-    overflow: hidden;
 }
 
 .gallery .text {
@@ -200,6 +199,8 @@
 
 .galleryAnimation {
     display: flex;
+    overflow: hidden;
+    justify-content: start;
 }
 
 .galleryAnimation h3 {
@@ -375,7 +376,7 @@
     color: #0F0F0F;
 }
 
-.signIn form input:not(input.mini, input[type = submit]){
+.signIn form input:not(input.mini, input[type = button]){
     width: 400px;
     padding: 10px;
     border: none;
@@ -394,12 +395,13 @@
 
 }
 
-.signIn form input[type = submit]{
+.signIn form input[type = button]{
     background: transparent;
     border: 1px solid rgb(0, 0, 0, 0.4);
     width: 380px;
     padding: 20px;
-    margin-top: 10px;
+    margin-top: 30px;
+    cursor: pointer;
 }
 
 .footer{
