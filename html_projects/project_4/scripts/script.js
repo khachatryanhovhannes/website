@@ -2,11 +2,11 @@
 function gallerySlider(control) {
     if (control === "right") {
         let gallery_1 = document.getElementById("gallery_1");
-        gallery_1.style = "width: 320px; overflow: hidden";
+        gallery_1.style = "animation-name:gallerySlider; animation-duration:3s; animation-fill-mode:forwards";
     }
     else {
         let gallery_1 = document.getElementById("gallery_1");
-        gallery_1.style = "width: auto";
+        gallery_1.style = "animation-name:gallerySliderNone; animation-duration:3s; animation-fill-mode:forwards";
     }
 }
 

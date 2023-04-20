@@ -315,6 +315,7 @@
 .feedbacks {
     display: flex;
     overflow: hidden;
+    justify-content: start;
 }
 
 .feedback {
@@ -452,4 +453,29 @@ margin-top: 10px;
     display: inline-block;
     color: white;
     margin: 0 8px;
+}
+
+
+
+
+@keyframes gallerySlider {
+    from{
+        width: 715px;
+        overflow: visible;
+    }
+    to{
+        width: 320px;
+        overflow: hidden;
+    }
+}
+
+@keyframes gallerySliderNone {
+    from{
+        width: 320px;
+        overflow: hidden;
+    }
+    to{
+        width: 715px;
+        overflow: visible;
+    }
 }
