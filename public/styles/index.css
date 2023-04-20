@@ -221,6 +221,9 @@ div.g {
     text-align: center;
     margin-bottom: 20px;
 }
+.trainings table{
+    margin: 0 auto;
+}
 
 .trainings table, tr, td, th{
     border-collapse: collapse;

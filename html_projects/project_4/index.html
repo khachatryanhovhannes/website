@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logoAndNav">
+                <div class="logo">Le Chalet Garden</div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#"> Главная</a></li>
+                        <li><a href="#"> О нас</a></li>
+                        <li><a href="#"> Наш домик</a></li>
+                        <li><a href="#"> Галерея</a></li>
+                        <li><a href="#"> Отзывы</a></li>
+                        <img src="./images/search.png" alt="">
+                    </ul>
+                </nav>
+            </div>
+            <div class="idealAndBron">
+                <div class="ideal">
+                    Идеальный домик для отдыха
+                </div>
+                <div class="bron">
+                    <p>Для идеального отдыха с семьей или с друзьями. Для идеального отдыха с семьей или с друзьями.</p>
+                    <button>Забронировать</button>
+                </div>
+            </div>
+            <div class="video">
+                <video width="100%">
+                    <source src="./images/IMG_2015 (1).mp4" type="video/mp4">
+                </video>
+            </div>
+        </header>
+        <main>
+            <section class="aboutUs">
+                <h1>О нас</h1>
+                <div class="aboutUscont">
+                    <img src="./images/about.png" alt="">
+                    <div class="aboutUsText">
+                        <p>Дом действует с января 2023 года. Он совсем новый. Домик расположен среди гор и лесов, откуда
+                            открывается красивый вид.
+                            <br>
+                            <br>
+                            Двухэтажный домик со всеми удобствами для отдыха  3 комнаты, гостиная , 2 санузла, летняя
+                            кухня, мангал, кухня.
+                        </p>
+                    </div>
+                    <div class="aboutUsText">
+                        <p>Наш домик находится в Армении: Котайкская область, Цахкадзор. Прекрасное место для идеального
+                            отдыха с семьей или с друзьями.</p>
+                        <button>Забронировать</button>
+                    </div>
+                </div>
+            </section>
+            <section class="gallery">
+                <div class="text">
+                    <h1>Галерея нашего домика</h1>
+                    <div class="controls">
+                        <i onclick="gallerySlider()" class="fa-solid fa-chevron-left"></i>
+                        <i onclick="gallerySlider('right')" class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="galleryAnimation">
+                    <div class="gallery_1" id="gallery_1">
+                        <img src="./images/gallery_1.png" alt="">
+                        <h3>Спальня 1</h3>
+                        <p>Маленькая спанья с видом на горы, где есть Двуспальняя кравать.ю 2 тумбочки и шкаф</p>
+                    </div>
+                    <div class="gallery_2" id="gallery_2">
+                        <img src="./images/gallery_2.png" alt="">
+                        <h3>Спальня 2</h3>
+                        <p>Маленькая спанья с видом на горы, где есть Двуспальняя кравать.ю 2 тумбочки и шкаф</p>
+                    </div>
+                </div>
+            </section>
+            <section class="ourHouse">
+                <div class="ourHouseTitle">
+                    <h1>Наш домик</h1>
+                    <p>В нашем уютном домике есть</p>
+                </div>
+                <div class="ourHouseCont">
+                    <ul>
+                        <li><span>01.</span>3 спальни</li>
+                        <li><span>02.</span>Просторная гостиная</li>
+                        <li><span>03.</span>2 санузла</li>
+                        <li><span>04.</span>Кухня с посудой</li>
+                        <li><span>04.</span>Холодильник</li>
+                        <li><span>06.</span>Телевизор</li>
+                    </ul>
+                    <ul>
+                        <li><span>07.</span>Отопительная система</li>
+                        <li><span>08.</span>Wi-Fi</li>
+                        <li><span>09.</span>Летняя кухня</li>
+                        <li><span>10.</span>Мангал</li>
+                        <li><span>11.</span>Просторный двор</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="ourFeedbacks">
+                <div class="feedbackTitle">
+                    <h1>Отзывы</h1>
+                    <div class="controls">
+                        <i onclick="feedBack('')" class="fa-solid fa-chevron-left"></i>
+                        <i onclick="feedBack('right')" class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="feedbacks" id="feedbacks">
+                    <div class="feedback">
+                        <img src="./images/Rectangle 39859.png" alt="">
+                        <h2>Лилия Манукян</h2>
+                        <h3>Прекрасное мест для отдыха</h3>
+                        <p>“Мы с подругой решили поискать место для отдыза и остановили наш выбор на домик Le Chalet
+                            Garden. Домик очень уютный и просторный, есть кухня, 3 спальни и огромный двор, где мы по
+                            утрам пили кофе и наслаждались чудесной природой Армении.</p>
+                    </div>
+                    <div class="feedback">
+                        <img src="./images/Rectangle 39859 (1).png" alt="">
+                        <h2>Анна Киракосян</h2>
+                        <h3>Прекрасное мест для отдыха</h3>
+                        <p>“Мы с друзьями забронировали домик на 2 дня и остались очень довольны. Во-первых домик очень
+                            уютный и светлый, там есть все для удобства, во вторых из окон открывается прекрасный вид. Я
+                            уже молчу о прекрасной природе Цахкадзора. Рекомендую”</p>
+                    </div>
+                    <div class="feedback">
+                        <img src="./images/Rectangle 39859 (2).png" alt="">
+                        <h2>Лилия Манукян</h2>
+                        <h3>Прекрасное мест для отдыха</h3>
+                        <p>“Мы с подругой решили поискать место для отдыза и остановили наш выбор на домик Le Chalet
+                            Garden. Домик очень уютный и просторный, есть кухня, 3 спальни и огромный двор, где мы по
+                            утрам пили кофе и наслаждались чудесной природой Армении.</p>
+                    </div>
+                    <div class="feedback">
+                        <img src="./images/Rectangle 39859 (2).png" alt="">
+                        <h2>Лилия Манукян</h2>
+                        <h3>Прекрасное мест для отдыха</h3>
+                        <p>“Мы с подругой решили поискать место для отдыза и остановили наш выбор на домик Le Chalet
+                            Garden. Домик очень уютный и просторный, есть кухня, 3 спальни и огромный двор, где мы по
+                            утрам пили кофе и наслаждались чудесной природой Армении.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="signIn">
+                <form>
+                    <h1>Забронировать наш домик в один клик</h1>
+                    <input type="text" placeholder="Имя"><br>
+                    <input type="text" placeholder="Телефон">
+                    <br>
+                    <input class="mini" type="text" placeholder="Дата брони">
+                    <input class="mini" type="text" placeholder="Дата выезда">
+                    <input class="mini" type="number" placeholder="Сколько человек"><br>
+                    <input type="submit" value="Забронировать">
+                </form>
+                <img src="./images/337178393_9345226222184418_6231452353836523030_n.png" alt="">
+            </section>
+        </main>
+        <footer class="footer">
+            <ul>
+                <h1 class="logo">Le Chalet Garden</h1>
+                <li>Главная</li>
+                <li>О нас</li>
+                <li>Наш домик</li>
+                <li>Галерея</li>
+                <li>Отзывы</li>
+            </ul>
+            <ul>
+                <h1>Связаться с нами</h1>
+                <li><i class="fa-solid fa-location-dot"></i> Армения, Котайкская область, Цахкадзор</li>
+                <li><i class="fa-regular fa-clock"></i> Mon- Sun; 10:00-22:00</li>
+                <li><i class="fa-solid fa-phone"></i> +374 93 40 02 24</li>
+                <li><i class="fa-regular fa-envelope"></i> manemanmkrtchyan@gmail.com</li>
+            </ul>
+            <div>
+                <h1>Соц сети</h1>
+                <div class="socials">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-viber"></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/b67d1921a9.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
