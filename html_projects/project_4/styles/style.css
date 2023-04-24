@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -376,7 +376,7 @@
     color: #0F0F0F;
 }
 
-.signIn form input:not(input.mini, input[type = button]){
+.signIn form input:not(input.mini, input[type=button]) {
     width: 400px;
     padding: 10px;
     border: none;
@@ -385,7 +385,7 @@
     margin-top: 10px;
 }
 
-.signIn form input.mini{
+.signIn form input.mini {
     width: 110px;
     padding: 10px;
     margin: 10px 11px 0 0;
@@ -395,7 +395,7 @@
 
 }
 
-.signIn form input[type = button]{
+.signIn form input[type=button] {
     background: transparent;
     border: 1px solid rgb(0, 0, 0, 0.4);
     width: 380px;
@@ -404,27 +404,28 @@
     cursor: pointer;
 }
 
-.footer{
+.footer {
     background: #282828;
     padding: 57px 251px 99px 51px;
     display: flex;
     justify-content: space-between;
 }
 
-.footer ul{
+.footer ul {
     list-style: none;
 }
 
-.footer ul:nth-child(1) h1{
+.footer ul:nth-child(1) h1 {
     font-family: 'Boruna - Demo Version';
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 50px;
-color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    color: #FFFFFF;
 }
 
-.footer ul:nth-child(2) h1, div h1{
+.footer ul:nth-child(3) h1,
+footer div h1 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -436,48 +437,611 @@ color: #FFFFFF;
     margin-bottom: 14px;
 }
 
-.footer ul li{
+.footer ul li {
     font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-color: #FFFFFF;
-margin-top: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-top: 10px;
 }
 
-.socials{
+.socials {
     margin-top: 32px;
 }
 
-.socials i{
+.socials i {
     font-size: 20px;
     display: inline-block;
     color: white;
     margin: 0 8px;
 }
 
+#popUpForm {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #0000008e;
+
+}
+
+#crate {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #0000008e;
+}
+
+#popUpForm>div,
+#crate div {
+    margin: 100px auto;
+    background: #FFFFFF;
+    width: 700px;
+}
+
+.popUpForm {
+    padding: 80px 150px 133px;
+}
+
+#popUpForm p,
+#crate p {
+    text-align: right;
+}
+
+#popUpForm i,
+#crate i {
+    display: inline-block;
+    font-size: 25px;
+    padding: 20px;
+    cursor: pointer;
+}
 
 
+.popUpForm h1 {
+    font-family: 'PP Neue Machina';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    color: #0F0F0F;
+}
 
-@keyframes gallerySlider {
-    from{
-        width: 715px;
-        overflow: visible;
+.popUpForm .big {
+    width: 400px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.4);
+    margin-top: 10px;
+}
+
+.popUpForm .mini {
+    width: 110px;
+    padding: 10px;
+    margin: 10px 10px 0 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.4);
+}
+
+.popUpForm input[type=button] {
+    background: transparent;
+    border: 1px solid rgb(0, 0, 0, 0.4);
+    width: 380px;
+    padding: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#crate h1 {
+    margin: auto;
+    font-family: 'PP Neue Machina';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 316px;
+    color: #0F0F0F;
+    padding: 100px 0 200px;
+}
+
+.navbars {
+    display: none;
+}
+
+.signIn>h1 {
+    display: none;
+}
+
+.soc_1 {
+    display: none;
+}
+
+@media screen and (max-width: 1600px) {
+    .popUpForm {
+        padding: 40px 74px 50px;
     }
-    to{
-        width: 320px;
-        overflow: hidden;
+    #popUpForm > div, #crate div {
+        margin: 100px 125px;
+        background: rgb(255, 255, 255);
+        width: 550px;
+    }    
+    .container {
+        width: 800px;
+    }
+
+    .nav ul li a {
+        display: none;
+    }
+
+    .navbars {
+        display: block;
+        border: none;
+        font-size: 30px;
+    }
+
+    .nav ul img {
+        margin-left: 0px;
+    }
+
+    .ideal {
+        font-family: 'PP Neue Machina';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 37px;
+        display: flex;
+        align-items: center;
+        color: #0F0F0F;
+        width: 364px;
+        height: 74px;
+    }
+
+    .bron p {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #0F0F0F;
+        width: 364px;
+        height: 60px;
+    }
+
+    .bron button {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        width: 100%;
+        color: #000000;
+    }
+
+    .video {
+        width: 100%;
+        height: 340px;
+    }
+
+    .header {
+        padding: 30px 20px 30px;
+    }
+
+    .aboutUs {
+        padding: 100px 20px;
+    }
+
+    .aboutUs h1 {
+        font-family: 'PP Neue Machina';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 35px;
+        color: #0F0F0F;
+
+    }
+
+    .aboutUscont {
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .aboutUscont img {
+        width: 100%;
+    }
+
+    .aboutUsText {
+        margin-top: 30px;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+    }
+
+    .gallery .text h1 {
+        font-family: 'PP Neue Machina';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 35px;
+        margin-bottom: 30px;
+        width: 426px;
+        height: 35px;
+        color: #FFFFFF;
+        padding-left: 20px;
+    }
+
+    .controls {
+        display: none;
+    }
+
+    .gallery {
+        padding-left: 0;
+    }
+
+    .gallery_1 img,
+    .gallery_2 img {
+        width: 500px;
+    }
+
+    .galleryAnimation {
+        overflow-x: auto;
+    }
+
+    .galleryAnimation::-webkit-scrollbar {
+        display: none;
+    }
+
+    .feedbacks {
+        overflow-x: auto;
+    }
+
+    .feedbacks::-webkit-scrollbar {
+        display: none;
+    }
+
+    .galleryAnimation h3 {
+        width: 194.31px;
+        height: 29px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF;
+    }
+
+    .galleryAnimation p {
+        width: 529px;
+        height: 40px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+
+    .ourHouse {
+        padding: 100px 25px;
+        flex-wrap: wrap;
+    }
+
+    .ourHouse h1 {
+        font-family: 'PP Neue Machina';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 31px;
+        color: #0F0F0F;
+    }
+
+    .ourHouse p {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+    }
+
+    .ourHouseCont {
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    .ourHouseCont ul li {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .ourFeedbacks {
+        flex-wrap: wrap;
+        padding-left: 0px;
+    }
+
+    .ourFeedbacks h1 {
+        font-family: 'PP Neue Machina';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        margin-left: 20px;
+        line-height: 35px;
+    }
+
+    .feedbacks {
+        margin-top: 27px;
+    }
+
+    .signIn>h1 {
+        display: block;
+
+        font-family: 'PP Neue Machina';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 35px;
+        display: flex;
+        align-items: center;
+        color: #0A0A0A;
+
+    }
+
+    .signIn>form>h1 {
+        display: none;
+    }
+
+    .signIn {
+        flex-wrap: wrap;
+        padding: 100px 20px;
+    }
+
+    .signIn form {
+        width: 360px;
+        margin-top: 30px;
+    }
+
+    .signIn form input:not(input.mini, input[type=button]) {
+        width: 100%;
+    }
+
+    .signIn form input[type=button] {
+        width: 100%;
+    }
+
+    .signIn form input.mini {
+        width: 106px;
+    }
+
+    .signIn img {
+        margin-top: 30px;
+        width: 360px;
+    }
+
+    .soc_1 {
+        display: block;
+    }
+
+    .soc_2 {
+        display: none;
+    }
+
+    .footer {
+        padding: 37px 47px 70px 25px;
+        flex-wrap: wrap;
+    }
+
+    .footer ul:nth-child(3) {
+        margin-top: 53px;
     }
 }
 
-@keyframes gallerySliderNone {
-    from{
+@media screen and (max-width:800px) {
+    .container {
         width: 320px;
-        overflow: hidden;
     }
-    to{
-        width: 715px;
-        overflow: visible;
+
+    .logo {
+        font-family: 'Boruna - Demo Version';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+
+        color: #000000;
+
+    }
+
+    .logoAndNav {
+        flex-direction: row-reverse;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .ideal {
+        font-family: 'PP Neue Machina';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 31px;
+        display: flex;
+        align-items: center;
+        color: #0F0F0F;
+
+    }
+
+    .idealAndBron {
+        flex-wrap: wrap;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .bron p {
+        width: 300px;
+        height: 60px;
+        left: 10px;
+        top: 169px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #0F0F0F;
+    }
+
+    .bron button {
+        width: 100%;
+    }
+
+    .header {
+        padding: 30px 0;
+    }
+
+    .aboutUs {
+        padding: 70px 10px;
+    }
+
+    .aboutUsText button {
+        width: 100%;
+    }
+
+    .gallery .text h1 {
+        font-family: 'PP Neue Machina';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 23px;
+
+        /* Text/White */
+
+        color: #FFFFFF;
+    }
+
+    .gallery_1 img,
+    .gallery_2 img {
+        width: 260px;
+    }
+
+    .gallery_1,
+    .gallery_2 {
+
+        padding: 0;
+        border: none;
+    }
+
+    .galleryAnimation h3 {
+        width: 194.31px;
+        height: 24px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+
+    }
+
+    .galleryAnimation p {
+        width: 260px;
+        height: 60px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .ourHouse {
+        padding: 70px 10px;
+    }
+
+    .ourHouseCont {
+        flex-wrap: wrap;
+    }
+
+    .feedback img {
+        width: 280px;
+    }
+
+    .feedback {
+        padding: 0;
+        border: none;
+    }
+
+    .signIn {
+        padding: 70px 10px;
+    }
+
+    .signIn>h1 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 23px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .signIn form input.mini {
+        width: 100%;
+    }
+
+    .signIn img {
+        display: none;
+    }
+
+    .footer ul:nth-child(1) h1 {
+        font-family: 'Boruna - Demo Version';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 30px;
+        color: #FFFFFF;
+    }
+
+    .footer ul:nth-child(3) h1,
+    footer div h1 {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+
+    .soc_1 {
+        display: none;
+    }
+
+    .soc_2 {
+        display: block;
+    }
+    #popUpForm > div, #crate div{
+        width: 300px;
+        margin: 50px 0 0 10px;
+    }
+    .popUpForm {
+        padding: 20px 10px 20px;
+    }
+    .popUpForm .big{
+        width: 100%;
+    }
+    .popUpForm .mini{
+        width: 100%;
+        margin: 10px 0 0;
+    }
+    .popUpForm input[type=button]{
+        width: 100%;
+    }
+    .ourHouseCont ul{
+        margin-right: 0;
     }
 }

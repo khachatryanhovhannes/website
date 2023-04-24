@@ -14,8 +14,34 @@
 
 <body>
     <div class="container">
+        <div id="popUpForm">
+            <div>
+                <p><i onclick="seePopUp(false)" class="fa-solid fa-xmark"></i></p>
+                <form class="popUpForm">
+                    <h1>Забронировать наш домик в один клик</h1>
+                    <input class="big" type="text" placeholder="Имя"><br>
+                    <input class="big" type="text" placeholder="Телефон">
+                    <br>
+                    <input class="mini" type="text" placeholder="Дата брони">
+                    <input class="mini" type="text" placeholder="Дата выезда">
+                    <input class="mini" type="number" placeholder="Сколько человек"><br>
+                    <input onclick="seePopUp(true)" type="button" value="Забронировать">
+                </form>
+            </div>
+        </div>
+        <div id="crate">
+            <div>
+                <p><i onclick="seePopUp(false)" class="fa-solid fa-xmark"></i></p>
+                <h1>Поздравляю, вы забронировали домик</h1>
+            </div>
+        </div>
+
+
+
+
         <header class="header">
             <div class="logoAndNav">
+                <button class="navbars"><i class="fa-solid fa-bars"></i></button>
                 <div class="logo">Le Chalet Garden</div>
                 <nav class="nav">
                     <ul>
@@ -152,6 +178,7 @@
                 </div>
             </section>
             <section class="signIn">
+                <h1>Забронировать наш домик в один клик</h1>
                 <form>
                     <h1>Забронировать наш домик в один клик</h1>
                     <input type="text" placeholder="Имя"><br>
@@ -160,7 +187,7 @@
                     <input class="mini" type="text" placeholder="Дата брони">
                     <input class="mini" type="text" placeholder="Дата выезда">
                     <input class="mini" type="number" placeholder="Сколько человек"><br>
-                    <input onclick="" type="button" value="Забронировать">
+                    <input onclick="seePopUp('show')" type="button" value="Забронировать">
                 </form>
                 <img src="./images/337178393_9345226222184418_6231452353836523030_n.png" alt="">
             </section>
@@ -174,6 +201,16 @@
                 <li>Галерея</li>
                 <li>Отзывы</li>
             </ul>
+
+            <div class="soc_1">
+                <h1>Соц сети</h1>
+                <div class="socials">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-viber"></i>
+                </div>
+            </div>
             <ul>
                 <h1>Связаться с нами</h1>
                 <li><i class="fa-solid fa-location-dot"></i> Армения, Котайкская область, Цахкадзор</li>
@@ -181,7 +218,7 @@
                 <li><i class="fa-solid fa-phone"></i> +374 93 40 02 24</li>
                 <li><i class="fa-regular fa-envelope"></i> manemanmkrtchyan@gmail.com</li>
             </ul>
-            <div>
+            <div class="soc_2">
                 <h1>Соц сети</h1>
                 <div class="socials">
                     <i class="fa-brands fa-facebook-f"></i>

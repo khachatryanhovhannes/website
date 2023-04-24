@@ -18,3 +18,17 @@ function feedBack(control){
     document.getElementById("feedbacks").style = "justify-content: left"
     }
 }
+
+function seePopUp(bool){
+    if(bool === "show"){
+        document.getElementById("popUpForm").style.display = "block"
+    }
+    else if(bool){
+        document.getElementById("popUpForm").style.display = "none"
+        document.getElementById("crate").style.display = "block"
+    }
+    else{
+        document.getElementById("popUpForm").style.display = "none"
+        document.getElementById("crate").style.display = "none"
+    }
+}
