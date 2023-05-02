@@ -310,7 +310,7 @@
 }
 
 .ourFeedbacks .controls {
-    margin-top: 534px;
+    margin-top:264px;
 }
 
 .feedbacks {
@@ -1050,5 +1050,8 @@ footer div h1 {
     }
     .crate h1{
         font-size: 25px;
+    }
+    .posi{
+        width: 80% !important;
     }
 }
