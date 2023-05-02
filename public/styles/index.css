@@ -166,7 +166,7 @@ div.g {
     padding: 30px;
 }
 
-.welcome{
+.welcome {
 
     background-color: #cecece;
 }
@@ -178,7 +178,7 @@ div.g {
     padding-top: 50px;
 }
 
-.life{
+.life {
 
     background-color: #cecece;
 }
@@ -204,7 +204,7 @@ div.g {
 }
 
 
-.education{
+.education {
     padding: 20px;
     background-color: #5c5c5c;
     color: #c7c7c7;
@@ -212,46 +212,51 @@ div.g {
     text-align: justify;
 }
 
-.trainings{
+.trainings {
     padding: 20px;
     background-color: #cecece;
 }
 
-.trainings h3{
+.trainings h3 {
     text-align: center;
     margin-bottom: 20px;
 }
-.trainings table{
+
+.trainings table {
     margin: 0 auto;
 }
 
-.trainings table, tr, td, th{
+.trainings table,
+tr,
+td,
+th {
     border-collapse: collapse;
     border: 1px solid black;
     text-align: justify;
 }
 
-.trainings td, .trainings th{
+.trainings td,
+.trainings th {
     padding: 10px;
 }
 
-.volutering h1{
+.volutering h1 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.volutering div{
+.volutering div {
     display: flex;
     justify-content: space-between;
     text-align: justify;
 }
 
-.volutering{
-    background-color: #9d9d9d ;
+.volutering {
+    background-color: #9d9d9d;
     padding: 30px 20px;
 }
 
-.volutering article{
+.volutering article {
     width: 30%;
     background-color: #5c5c5c;
     padding: 20px;
@@ -260,29 +265,32 @@ div.g {
     color: #cecece;
 }
 
-.volutering article p{
+.volutering article p {
     margin-top: 20px;
 }
 
-.works{
+.works {
     padding: 20px;
     background-color: #cecece;
 }
 
-.htmlCss{
+.htmlCss {
     margin-top: 20px;
     padding: 20px 0;
     border-top: 1px solid #5c5c5c;
 }
 
-.htmlCss h2, .js h2{
+.htmlCss h2,
+.js h2 {
     font-size: 20px;
 }
-.project{
+
+.project {
     margin-top: 20px;
 }
 
-.project a, .js a{
+.project a,
+.js a {
     display: inline-block;
     padding: 10px;
     background-color: #5c5c5c;
@@ -292,11 +300,12 @@ div.g {
     margin-top: 10px;
 }
 
-.project a:hover, .js a:hover{
+.project a:hover,
+.js a:hover {
     color: #fff;
 }
 
-.con h1{
+.con h1 {
     margin: 20px;
     font-size: 20px;
     font-weight: 400;
@@ -321,93 +330,120 @@ div.g {
     animation-delay: 2s;
 }
 
-.life p a{
+.life p a {
     color: black;
 }
 
 @media screen and (max-width: 950px) {
-    .volutering article h2{
+    .volutering article h2 {
         font-size: 17px;
     }
-    .g{
+
+    .g {
         display: none;
     }
-    .footerNav ul li a{
+
+    .footerNav ul li a {
         font-size: 13px;
     }
-    .nav ul li a{
+
+    .nav ul li a {
         font-size: 14px;
         padding: 7px 13px;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .volutering div{
+    .volutering div {
         flex-wrap: wrap;
     }
-    .volutering article{
+
+    .volutering article {
         width: 100%;
         margin-top: 30px;
     }
-    .footerNav ul li a{
+
+    .footerNav ul li a {
         padding: 5px 7px;
     }
-    .header{
+
+    .header {
         align-items: center;
+    }
+
+    .socialLinks {
+
+        width: 25%;
     }
 }
 
 @media screen and (max-width:710px) {
-    .trainings table, tr, td, th{
+
+    .trainings table,
+    tr,
+    td,
+    th {
         font-size: 10px;
     }
-    .nav{
+
+    .nav {
         justify-content: start;
     }
-    .nav ul{
+
+    .nav ul {
         width: 100%;
         flex-wrap: wrap;
     }
-    .nav ul li{
+
+    .nav ul li {
         width: 100%;
     }
-    .nav ul li a{
+
+    .nav ul li a {
         width: 100%;
         display: inline-block;
         border-bottom: 1px solid #5c5c5c;
     }
-    .socialLinks a{
+
+    .socialLinks a {
         display: inline-block;
         margin: 0 5px;
     }
-    .copyRight{ 
+
+    .copyRight {
         font-size: 10px;
     }
-    .footerNav ul li a{
+
+    .footerNav ul li a {
         width: 100%;
     }
-    .footerNav ul li{
+
+    .footerNav ul li {
         width: 100%;
         border-bottom: 1px solid #5c5c5c;
     }
-    .footerNav ul{
+
+    .footerNav ul {
         flex-wrap: wrap;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .header{
+    .header {
         justify-content: center;
     }
-    .nameAndLogo a{
+
+    .nameAndLogo a {
         width: 100%;
         text-align: center;
     }
-    .life img{
+
+    .life img {
         width: 100%;
         margin-bottom: 20px;
     }
-    #myBtn{
+
+    #myBtn {
         width: 30px;
         height: 30px;
         font-size: 20px;
@@ -415,61 +451,75 @@ div.g {
 }
 
 @media screen and (max-width: 500px) {
-    .nameAndLogo img{
+    .nameAndLogo img {
         width: 100px;
     }
-    .name{
+
+    .name {
         font-size: 25px;
     }
-    .welcome h1{
+
+    .welcome h1 {
         font-size: 17px;
     }
+
     .life h2 {
         font-size: 15px;
     }
-    .life p{
+
+    .life p {
         font-size: 13px;
     }
-    .education h3{
-        font-size: 15px;
-    }
-    .education p{
-        font-size: 13px;
-    }
-    .trainings h3{
+
+    .education h3 {
         font-size: 15px;
     }
 
-    .trainings table tr{
+    .education p {
+        font-size: 13px;
+    }
+
+    .trainings h3 {
+        font-size: 15px;
+    }
+
+    .trainings table tr {
         display: flex;
         justify-content: space-between;
     }
 
-    .trainings table tr td, .trainings table tr th{
+    .trainings table tr td,
+    .trainings table tr th {
         width: 33.3%;
         font-size: 7px;
     }
-    .volutering h1{
+
+    .volutering h1 {
         font-size: 15px;
     }
-    .volutering article h2{
+
+    .volutering article h2 {
         font-size: 14px;
     }
-    .volutering article p{
-        font-size: 13px;
-    }
-    .works h1{
-        font-size: 15px;
-    }
-    
 
-    .social h1{
-        font-size: 15px;
-    }
-    .social h3{
+    .volutering article p {
         font-size: 13px;
     }
-    .con h1{
+
+    .works h1 {
+        font-size: 15px;
+    }
+
+
+    .social h1 {
+        font-size: 15px;
+    }
+
+    .social h3 {
+        font-size: 13px;
+    }
+
+    .con h1 {
         font-size: 13px;
     }
 }

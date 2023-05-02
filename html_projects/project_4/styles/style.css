@@ -566,6 +566,10 @@ footer div h1 {
 }
 
 @media screen and (max-width: 1600px) {
+    .navbars{
+        background: transparent;
+        border: none;
+    }
     .popUpForm {
         padding: 40px 74px 50px;
     }
@@ -1043,5 +1047,8 @@ footer div h1 {
     }
     .ourHouseCont ul{
         margin-right: 0;
+    }
+    .crate h1{
+        font-size: 25px;
     }
 }
