@@ -16,6 +16,7 @@
     font-size: 40px;
     border: 1px solid black;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 #keyboard{
