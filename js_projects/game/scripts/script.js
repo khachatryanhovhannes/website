@@ -138,16 +138,16 @@ document.addEventListener("keyup", () => {
     data.monkey.xDelta = 0
 })
 
-function goRight(){
+
+document.getElementById('right').addEventListener('mousedown', (evt) => {
     data.monkey.xDelta = data.monkey.speed;
-}
-
-function goLeft(){
-    data.monkey.xDelta = -data.monkey.speed
-}
-
-function stopMove(){
-    setTimeout(()=>{
-        data.monkey.xDelta = 0
-    }, 10)
-}
+})
+document.getElementById('right').addEventListener('mouseup', (evt) => {
+    data.monkey.xDelta = 0
+})
+document.getElementById('left').addEventListener('mousedown', (evt) => {
+    data.monkey.xDelta = -data.monkey.speed;
+})
+document.getElementById('left').addEventListener('mouseup', (evt) => {
+    data.monkey.xDelta = 0
+})

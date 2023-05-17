@@ -19,6 +19,7 @@ canvas {
     font-size: 30px;
 }
 
+
 @media screen and (max-width: 800px) {
     canvas {
         width: 350px;
