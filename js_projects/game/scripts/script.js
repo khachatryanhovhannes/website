@@ -5,6 +5,8 @@ const context = canvas.getContext("2d")
 
 let monkey = document.createElement("img")
 monkey.src = "./image/monkey.png"
+// let middleMonkey = document.createElement(img)
+// middleMonkey.src = 
 
 let backImage = document.createElement("img")
 backImage.src = "./image/back.jpg"
@@ -64,7 +66,17 @@ function update() {
             }
 
             if (!(data.monkey.score % 5)) {
-                data.monkey.width += 10
+                if(data.monkey.score <= 25){
+                    data.monkey.width += 10
+                }
+                if(data.monkey.score >= 25 && data.monkey.score <= 40){
+                    data.monkey.width = window.innerWidth < 800 ? 50: 100;
+                    monkey.src = './image/middleMonkey.png'
+                }
+                if(data.monkey.score > 40){
+                    monkey.src = './image/gorilla.png'
+                }
+                
             }
         }
     })
