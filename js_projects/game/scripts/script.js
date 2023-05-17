@@ -139,15 +139,15 @@ document.addEventListener("keyup", () => {
 })
 
 
-document.getElementById('right').addEventListener('mousedown', (evt) => {
+document.getElementById('right').addEventListener('touchstart', (evt) => {
     data.monkey.xDelta = data.monkey.speed;
 })
-document.getElementById('right').addEventListener('mouseup', (evt) => {
+document.getElementById('right').addEventListener('touchend', (evt) => {
     data.monkey.xDelta = 0
 })
-document.getElementById('left').addEventListener('mousedown', (evt) => {
+document.getElementById('left').addEventListener('touchstart', (evt) => {
     data.monkey.xDelta = -data.monkey.speed;
 })
-document.getElementById('left').addEventListener('mouseup', (evt) => {
+document.getElementById('left').addEventListener('touchend', (evt) => {
     data.monkey.xDelta = 0
 })
