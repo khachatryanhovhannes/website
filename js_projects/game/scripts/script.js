@@ -147,5 +147,7 @@ function goLeft(){
 }
 
 function stopMove(){
-    data.monkey.xDelta = 0
+    setTimeout(()=>{
+        data.monkey.xDelta = 0
+    }, 10)
 }

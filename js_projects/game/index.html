@@ -11,8 +11,8 @@
     <canvas width="800px" height="500px">
     </canvas>
     <div class="keys">
-        <button id="left" onmousedown="goLeft()" onmouseup="stopMove()">&#x21e6;</button>
-        <button id="right" onmousedown="goRight()"  onmouseup="stopMove()">&#x21e8;</button>
+        <button id="left" onmousedown="goLeft()" onmousewheel="goLeft()" onmouseup="stopMove()">&#x21e6;</button>
+        <button id="right" onmousedown="goRight()" onmouseup="stopMove()">&#x21e8;</button>
     </div>
     <script src="./scripts/script.js"></script>
 </body>
