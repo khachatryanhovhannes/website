@@ -168,3 +168,86 @@ body{
     cursor: pointer;
     font-size: 20px;
 }
+
+
+@media screen and (max-width: 1100px) {
+    #addTodoInList,
+#clearChecked,
+#clearAll,
+.dropdown {
+    padding: 15px 0;
+}
+#todos div h1{
+    font-size: 20px;
+}
+#todos div h3{
+    font-size: 11px;
+}
+#todos div button{
+    font-size: 8px;
+}
+#openDiv{
+    width: 90%;
+    left: calc((100% - 90%) / 2);
+    height: auto;
+}
+#addTodo{
+    width: 90%;
+    left: calc((100% - 90%) / 2);
+}
+}
+
+@media screen and (max-width: 800px) {
+    #todos div{
+        width: 33%;
+    }
+    #addTodoInList,
+    #clearChecked,
+    #clearAll,
+    .dropdown {
+        font-size: 10px;
+        width: 24%;
+        margin: 0 5px;
+    }
+    .dropdown-content a {
+        width: 100%;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .buttons{
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: space-evenly;
+    }
+
+    #addTodoInList,
+    #clearChecked,
+    #clearAll,
+    .dropdown {
+        width: 45%;
+        margin-top: 5px;
+    }
+    .dropdown-content{
+        width: 43%;
+    }
+    #todos div{
+        width: 49%;
+    }
+    #addTodo input[type="date"], #addTodo label{
+        width: 48%;
+    }
+    #addTodo{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #todos div{
+        width: 90%;
+    }
+
+    #addTodo input[type="date"], #addTodo label{
+        width: 46%;
+    }
+}
