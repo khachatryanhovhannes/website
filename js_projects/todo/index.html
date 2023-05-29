@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div id="addTodo">
+        <div>
+            <button id = "closeAddSection">&#10006;</button>
+        </div>
+        <input type="text" id="name" placeholder="Name">
+        <input type="number" id="number" placeholder="Important">
+        <label for="startDate">Start Date</label> <input type="date" id="startDate" placeholder="Start Date">
+        <label for="endDate">End Date</label> <input type="date" id="endDate" placeholder="End Date">
+        <textarea cols="30" rows="10" id="desc">Description</textarea>
+        <input type="submit" value="ADD" id="add">
+    </div>
+    <div id="root">
+        <header>
+            <h1 id="title">TODO</h1>
+        </header>
+        <div class="buttons">
+            <button id="clearAll">CLEAR ALL</button>
+            <button id="clearChecked">CLEAR CHECKED</button>
+            <button id="addTodoInList">ADD TODO</button>
+            <button class="dropdown">SORTED BY
+                <div class="dropdown-content">
+                    <a id="sortedAZ">SORTED A-Z</a>
+                    <a id="sortedStart">SORTED START DATE</a>
+                    <a id="sortedEnd">SORTED END DATE</a>
+                    <a id="sortedimp">SORTED IMPORTANY</a>
+                  </div>
+            </button>
+        </div>
+        <div id="todos">
+        </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background: rgb(122, 119, 119);
+    
+}
+#title {
+    text-align: center;
+    font-size: 80px;
+}
+
+#addTodoInList,
+#clearChecked,
+#clearAll,
+.dropdown {
+    margin: 0 15px;
+    padding: 15px;
+    width: 200px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: rgb(209, 209, 209);
+    background-color: rgb(35, 35, 35);
+}
+
+.dropdown-content {
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(209, 209, 209);
+    background-color: rgb(35, 35, 35);
+    padding: 15px;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#add:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(20, 20, 20);
+}
+
+#todos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#todos div {
+    text-align: center;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 20px;
+    width: 23%;
+    margin-top: 20px;
+}
+
+#todos div .learnMore {
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: rgb(209, 209, 209);
+    background-color: rgb(35, 35, 35);
+}
+
+#openDiv {
+    width: 800px;
+    height: 400px;
+    position: fixed;
+    top: 50px;
+    left: calc((100% - 800px) / 2);
+    text-align: center;
+    background-color: rgb(52, 52, 52);
+    border-radius: 30px;
+    padding: 20px 50px;
+    color: rgb(233, 233, 233);
+}
+
+#openDiv button {
+    float: right;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+#checked {
+    float: right;
+    color: rgb(47, 47, 47);
+    cursor: pointer;
+    border: none;
+    text-decoration: underline;
+    padding: 0 3px;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+
+#addTodo {
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: calc((100% - 500px) / 2);
+    background-color: rgb(52, 52, 52);
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 99999999;
+    display: none;
+}
+
+#addTodo *:not(input[type="date"], label, div, button) {
+    width: 100%;
+    border: none;
+    background-color: white;
+    margin: 2px;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 10px
+}
+#addTodo input[type="submit"]{
+    cursor: pointer;
+}
+#addTodo input[type="date"],
+#addTodo label {
+    width: 49%;
+    display: inline-block;
+    background-color: white;
+    margin: 2px;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 10px
+}
+
+#addTodo div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+}
+
+#addTodo div button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
