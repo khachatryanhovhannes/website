@@ -126,16 +126,43 @@ let todos = [
         id: Math.random(),
         checked: false
     },
+    {
+        name: "Express",
+        description: "Web Applications Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.",
+        importantly: 4,
+        startDate: "2023-06-25",
+        endDate: "2023-07-15",
+        id: Math.random(),
+        checked: false
+    },
 
-]
+];
+
+const addTudoContainer = document.getElementById("addTudoContainer")
+const closeAddSection = document.getElementById("closeAddSection")
+const addTudoForm = document.getElementById("addTudoForm")
+const addTodoButton = document.getElementById("addTodoButton")
+const add = document.getElementById("add");
+const clearAll = document.getElementById("clearAll");
+const clearChecked = document.getElementById("clearChecked");
+const sortedAZ = document.getElementById("sortedAZ")
+const sortedStart = document.getElementById("sortedStart")
+const sortedEnd = document.getElementById("sortedEnd")
+const sortedimp = document.getElementById("sortedimp")
+const openTodoContainer = document.getElementById("openTodoContainer")
+const openTodo = document.getElementById("openTodo")
+const closeOpenTodoSection = document.getElementById("closeOpenTodoSection")
+
+
+
 function drawTodos(todos) {
-
     const todosElem = document.getElementById("todos")
     while (todosElem.hasChildNodes())
         todosElem.removeChild(todosElem.firstChild)
     for (const todo of todos) {
-        const todoElem = document.createElement("div")
-        todoElem.class = "todo"
+        const todoElem = document.createElement("article")
+        todoElem.className = "todo"
+        const checkedPar = document.createElement("div")
         let checked = document.createElement("button")
         checked.innerHTML = todo.checked ? "checked" : "unchecked";
         checked.id = "checked"
@@ -143,7 +170,8 @@ function drawTodos(todos) {
             todo.checked = !todo.checked
             checked.innerHTML = todo.checked ? "checked" : "unchecked";
         })
-        todoElem.append(checked)
+        checkedPar.append(checked)
+        todoElem.append(checkedPar)
         const todoTitle = document.createElement("h1")
         todoTitle.innerHTML = todo.name
         todoElem.append(todoTitle)
@@ -162,86 +190,50 @@ function drawTodos(todos) {
         todoElem.append(btn)
         switch (todo.importantly) {
             case 1:
-                todoElem.style.background = "rgb(255, 0, 0)"
+                todoElem.style.background = "#FF7070"
                 break;
             case 2:
 
-                todoElem.style.background = "rgb(255, 89, 0)"
+                todoElem.style.background = "#FF9B70"
                 break;
             case 3:
 
-                todoElem.style.background = "rgb(255, 200, 0)"
+                todoElem.style.background = "#D170FF"
                 break;
             case 4:
 
-                todoElem.style.background = "rgb(128, 255, 0)"
+                todoElem.style.background = "#72FF70"
                 break;
             default:
 
-                todoElem.style.background = "rgb(0, 186, 0)"
+                todoElem.style.background = "#70CBFF"
                 break;
         }
         todosElem.append(todoElem)
     }
 }
-
 drawTodos(todos)
 
-function showOpenTodo(id) {
-    const openDiv = document.createElement("div")
-    openDiv.id = "openDiv"
-    const todo = todos.find(i => i.id === id)
-    const close = document.createElement("button")
-    close.innerHTML = "&#10006; "
-    close.addEventListener("click", () => {
-        openDiv.style.display = "none"
-
-        document.getElementById("root").style.opacity = "1"
-    })
-    openDiv.append(close)
-    const todoTitle = document.createElement("h1")
-    todoTitle.innerHTML = todo.name
-    openDiv.append(todoTitle)
-    const time = document.createElement("h3")
-    time.innerHTML = todo.startDate + " - " + todo.endDate;
-    openDiv.append(time)
-    const imp = document.createElement("p")
-    imp.innerHTML = "importance ֊ " + todo.importantly
-    openDiv.append(imp)
-    const desc = document.createElement("p")
-    desc.innerHTML = todo.description
-    openDiv.append(desc)
-    document.body.append(openDiv)
-    document.getElementById("root").style.opacity = "0.5"
-}
-
-const clearChecked = document.getElementById("clearChecked")
-clearChecked.addEventListener("click", () => {
-    todos = todos.filter(todo => !todo.checked)
-    drawTodos(todos)
-})
-
-const add = document.getElementById("add");
-add.addEventListener("click", () => {
-    let newMember = {}
+function handleAddTodo(){
+    const newMember = {}
     const name = document.getElementById("name")
     if (name.value != "") {
         newMember.name = name.value
     } else {
-        name.style = "border-bottom: 1px solid red"
+        name.style = "border: 1px solid red"
     }
     const desc = document.getElementById("desc")
-    if (desc.value != "") {
+    if (desc.value != "" && desc.value != "Description") {
         newMember.description = desc.innerHTML
     } else {
-        desc.style = "border-bottom: 1px solid red"
+        desc.style = "border: 1px solid red"
     }
 
     const num = document.getElementById("number")
-    if (num.value >= 1 && num.value <= 5) {
+    if (num.value && num.value >= 1 && num.value <= 5) {
         newMember.importantly = num.value
     } else {
-        num.style = "border-bottom: 1px solid red"
+        num.style = "border: 1px solid red"
     }
     const startDate = document.getElementById("startDate")
     const endDate = document.getElementById("endDate")
@@ -250,51 +242,53 @@ add.addEventListener("click", () => {
         newMember.endDate = endDate.value
     }
     else {
-        startDate.style = "border-bottom: 1px solid red"
-        endDate.style = "border-bottom: 1px solid red"
+        startDate.parentElement.style = "border: 1px solid red"
+        endDate.parentElement.style = "border: 1px solid red"
     }
     newMember.id = Math.random()
     newMember.checked = false
     console.log(Object.keys(newMember).length)
     if (Object.keys(newMember).length === 7) {
-        alert("sdjsgjh")
         todos.push(newMember);
         drawTodos(todos)
-        document.getElementById("addTodo").style.display = "none";
+        addTudoContainer.style.display = "none";
     }
+}
+
+add.addEventListener("click", handleAddTodo)
+
+function handleCloseAddSection(event){
+    addTudoContainer.style.display = "none"
+}
+
+addTodoButton.addEventListener("click", ()=>{
+    addTudoContainer.style.display = "block"
 })
 
+closeAddSection.addEventListener('click', handleCloseAddSection)
+addTudoContainer.addEventListener("click", handleCloseAddSection)
 
-const addTodoInList = document.getElementById("addTodoInList")
-addTodoInList.addEventListener("click", () => {
-    document.getElementById("root").style.opacity = "0.5"
-    document.getElementById("addTodo").style.display = "inline-flex";
+addTudoForm.addEventListener("click", (evt)=>{
+    evt.stopPropagation()
 })
 
-
-const closeAddSection = document.getElementById("closeAddSection")
-closeAddSection.addEventListener("click", () => {
-    document.getElementById("addTodo").style.display = "none";
-    document.getElementById("root").style.opacity = "1"
-
-})
-
-const clearAll = document.getElementById("clearAll")
-clearAll.addEventListener("click", () => {
+clearAll.addEventListener("click", ()=>{
     todos = [];
     drawTodos(todos)
 })
 
+clearChecked.addEventListener("click", ()=>{
+    todos = todos.filter(todo => !todo.checked)
+    drawTodos(todos)
+})
 
-const sortedAZ = document.getElementById("sortedAZ")
-sortedAZ.addEventListener("click", () => {
+sortedAZ.addEventListener("click", ()=>{
     todos = todos.sort((a, b) => {
         return a.name > b.name ? 1 : -1
     })
     drawTodos(todos)
 })
 
-const sortedStart = document.getElementById("sortedStart")
 sortedStart.addEventListener("click", () => {
     todos = todos.sort((a, b) => {
         let x = new Date(a.startDate)
@@ -304,7 +298,6 @@ sortedStart.addEventListener("click", () => {
     drawTodos(todos)
 })
 
-const sortedEnd = document.getElementById("sortedEnd")
 sortedEnd.addEventListener("click", () => {
     todos = todos.sort((a, b) => {
         let x = new Date(a.endDate)
@@ -314,10 +307,31 @@ sortedEnd.addEventListener("click", () => {
     drawTodos(todos)
 })
 
-const sortedimp = document.getElementById("sortedimp")
 sortedimp.addEventListener("click", () => {
     todos = todos.sort((a, b) => {
         return a.importantly > b.importantly ? 1 : -1
     })
     drawTodos(todos)
+})
+
+
+function showOpenTodo(id) {
+    const todo = todos.find(i => i.id === id);
+    document.querySelector("#openTodo > h1").innerHTML = todo.name;
+    document.querySelector("#openTodo > h3").innerHTML = todo.startDate + " - " + todo.endDate;
+    document.querySelector("#openTodo > h4").innerHTML = "importance - " + todo.importantly;
+    document.querySelector("#openTodo > p").innerHTML = todo.description;
+    openTodoContainer.style.display = "block"
+}
+
+function handleCloseTodoSection(){
+    openTodoContainer.style.display = "none"
+}
+
+
+closeOpenTodoSection.addEventListener('click', handleCloseTodoSection)
+openTodoContainer.addEventListener("click", handleCloseTodoSection)
+
+openTodo.addEventListener("click", (evt)=>{
+    evt.stopPropagation()
 })

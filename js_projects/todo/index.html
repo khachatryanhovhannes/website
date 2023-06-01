@@ -6,42 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/styles/style.css">
 </head>
 
 <body>
-    <div id="addTodo">
-        <div>
-            <button id = "closeAddSection">&#10006;</button>
+    <div class="container">
+        <div id="addTudoContainer">
+            <form id="addTudoForm">
+                <div class="closeButtonDiv">
+                    <button id="closeAddSection">&#10006;</button>
+                </div>
+                <input type="text" id="name" placeholder="Name">
+                <input type="number" id="number" min="1" max="5" placeholder="Importance">
+                <div class="date">
+                    <label for="startDate">Start Date</label> <input type="date" id="startDate"
+                        placeholder="Start Date">
+                </div>
+                <div class="date">
+                    <label for="endDate">End Date</label> <input type="date" id="endDate" placeholder="End Date">
+                </div>
+
+
+                <textarea cols="30" rows="10" id="desc">Description</textarea>
+                <input type="button" value="ADD" id="add">
+            </form>
         </div>
-        <input type="text" id="name" placeholder="Name">
-        <input type="number" id="number" placeholder="Important">
-        <label for="startDate">Start Date</label> <input type="date" id="startDate" placeholder="Start Date">
-        <label for="endDate">End Date</label> <input type="date" id="endDate" placeholder="End Date">
-        <textarea cols="30" rows="10" id="desc">Description</textarea>
-        <input type="submit" value="ADD" id="add">
-    </div>
-    <div id="root">
-        <header>
-            <h1 id="title">TODO</h1>
+        <div id="openTodoContainer">
+            <div id="openTodo">
+                <div class="closeButtonDiv">
+                    <button id="closeOpenTodoSection">&#10006;</button>
+                </div>
+                <h1></h1>
+                <h3></h3>
+                <h4></h4>
+                <p></p>
+            </div>
+        </div>
+
+
+        <header class="header">
+            <div class="name">TODO</div>
+            <button id="addTodoButton">+ Add todo</button>
         </header>
-        <div class="buttons">
-            <button id="clearAll">CLEAR ALL</button>
-            <button id="clearChecked">CLEAR CHECKED</button>
-            <button id="addTodoInList">ADD TODO</button>
-            <button class="dropdown">SORTED BY
-                <div class="dropdown-content">
-                    <a id="sortedAZ">SORTED A-Z</a>
-                    <a id="sortedStart">SORTED START DATE</a>
-                    <a id="sortedEnd">SORTED END DATE</a>
-                    <a id="sortedimp">SORTED IMPORTANY</a>
-                  </div>
-            </button>
-        </div>
-        <div id="todos">
-        </div>
+        <main class="main">
+            <section class="controlButtons">
+                <button id="sortedBy">Sorted by &#8628;
+                    <div class="dropdown-content">
+                        <a id="sortedAZ">A-Z</a>
+                        <a id="sortedStart">Start date</a>
+                        <a id="sortedEnd">End date</a>
+                        <a id="sortedimp">Importance</a>
+                    </div>
+                </button>
+                <div class="clearButtons">
+                    <button id="clearChecked">Clear checked</button>
+                    <button id="clearAll">Clear all</button>
+                </div>
+            </section>
+            <section id="todos"></section>
+        </main>
     </div>
-    <script src="./scripts/index.js"></script>
+
+    <script src="./public/scripts/script.js"></script>
 </body>
 
 </html>
