@@ -258,7 +258,9 @@ function handleAddTodo(){
 add.addEventListener("click", handleAddTodo)
 
 function handleCloseAddSection(event){
-    addTudoContainer.style.display = "none"
+    event.preventDefault();
+    addTudoContainer.style.display = "none";
+    return false;
 }
 
 addTodoButton.addEventListener("click", ()=>{
@@ -334,4 +336,11 @@ openTodoContainer.addEventListener("click", handleCloseTodoSection)
 
 openTodo.addEventListener("click", (evt)=>{
     evt.stopPropagation()
+})
+
+addTudoForm.addEventListener("keypress", (evt)=>{
+    if (evt.key === 'Enter') {
+        evt.preventDefault()
+        handleAddTodo()
+    }
 })
