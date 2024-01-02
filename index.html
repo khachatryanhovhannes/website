@@ -2,241 +2,417 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./public/styles/index.css">
-    <link rel="shortcut icon" href="./public/images/home.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Hovhannes Khachatryan - WebSite Portfolio</title>
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+    <link rel="icon" href="./assets/imgs/logo.png">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">
+                <img src="./assets/imgs/logo.png" alt="logo">
+                <span>
+                    Hovhannes
+                    <br>
+                    Khachatryan
+                </span>
+            </a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#service">Service</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#testmonial">Testmonial</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#blog">Blog</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav>
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">I am Hovhannes Khachatryan</span>
+            </h1>
+            <p class="header-subtitle">FRONT-END WEB DEVELOPER</p>
+
+            <button onclick="window.open('https://github.com/khachatryanhovhannes', '_blank');" class="btn btn-primary"
+                target="_blank">
+                Visit My Works
+            </button>
+        </div>
+    </header>
+    <section class="section" id="about">
+        <div class="container text-center">
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/image.png" class="about-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p>
+                        My name is Hovannes, I am 21 years old.
+                        I study at the Gyumri branch of the European University of Armenia in the department of
+                        "Jurisprudence". Since childhood, I have loved mathematics and the latest technologies.
+                        I took a number of programming courses, thanks to which I gained a lot of knowledge in
+                        this area. I also participated in a number of informal educational programs, gained knowledge
+                        from various fields. In 2020, I went to compulsory military service and participated in the
+                        Artsakh War. I was discharged in 2022. After demobilization, I decided not to be content
+                        with university knowledge and simultaneously engage in programming. I like to be self-educated.
+                        I know MS Office and I can work with git-github/gitlab. You can see my work in the "Work"
+                        section.
+                    </p>
+                    <button class="btn-rounded btn btn-outline-primary mt-4" type="submit"
+                        onclick="window.open('./assets/files/CV.pdf')">Download CV</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="service">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Do ?</p>
+            <h6 class="section-title mb-6">Service</h6>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/react.svg"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">React.js</h6>
+                            <p class="subtitle">
+                                I specialize in building modern and responsive user interfaces using React.js. I excel
+                                in creating dynamic
+                                and interactive SPAs that provide a seamless user experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/redux.png"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Redux</h6>
+                            <p class="subtitle">
+                                I ensure a robust and organized architecture to facilitate efficient data flow within
+                                the
+                                application.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/ts.png"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">TypeScript</h6>
+                            <p class="subtitle">
+                                I am proficient in TypeScript, leveraging its static typing features to enhance code
+                                quality and catch
+                                errors early in the development process.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/rest.png"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">RESTful APIs</h6>
+                            <p class="subtitle">I have experience designing and consuming RESTful APIs, creating
+                                seamless communication between frontend
+                                and backend systems.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/chakra.png"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Chakra UI</h6>
+                            <p class="subtitle">
+                                Chakra UI provides
+                                a set of customizable and themeable components that enable me to create consistent and
+                                visually
+                                appealing designs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/react-router.svg"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">React Router DOM</h6>
+                            <p class="subtitle">
+                                Creating dynamic and intuitive
+                                navigation structures, I ensure a smooth user experience and efficient handling of
+                                routes in both
+                                single-page and multi-page applications.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/https___1143667985-files.gitbook.io_~_files_v0_b_gitbook-legacy-files_o_spaces2Favatar.png_generation=1523462254548780&alt=media"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">i18n</h6>
+                            <p class="subtitle">
+                                I have experience implementing internationalization (i18n) in my projects, enabling the
+                                adaptation of
+                                content to different languages and regions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/git.png"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Git</h6>
+                            <p class="subtitle">
+                                I am proficient in using Git for version control in collaborative development
+                                environments. Employing Git
+                                workflows, branching strategies, and pull requests.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Did ?</p>
+            <h6 class="section-title mb-6">Portfolio</h6>
+            <h3 class="mt-4">UI/UX Templates</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="./html_projects/project_1/" class="portfolio-card" target="_blank">
+                        <img src="assets/imgs/Project_1.jpg" class="portfolio-card-img" alt="Project 1 image">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h5>
+                                    <p class="font-weight-normal">Category: UI/UX Templates</p>
+                            </span>
+                        </span>
+                    </a>
+                    <p><a href="https://www.figma.com/file/9YtQWLdjWAYzefwe2b3ddk/Untitled?type=design&node-id=0-1&mode=design"
+                            target="_blank">
+                            Figma link
+                        </a></p>
+                </div>
+                <div class="col-md-4">
+                    <a href="./html_projects/project_2/" class="portfolio-card" target="_blank">
+                        <img class="portfolio-card-img" src="assets/imgs/Project_2.jpg" class="img-responsive rounded"
+                            alt="Project 2 image">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h5>
+                                    <p class="font-weight-normal">Category: UI/UX Templates</p>
+                            </span>
+                        </span>
+                    </a>
+                    <p><a href="https://www.figma.com/file/eV9Ke3mVlmMJJn8WyuRtUO/Untitled?node-id=1-2654&t=wWzJWLRZGy2boMLE-0"
+                            target="_blank">
+                            Figma link
+                        </a></p>
+                </div>
+                <div class="col-md-4">
+                    <a href="./html_projects/project_3/" class="portfolio-card" target="_blank">
+                        <img class="portfolio-card-img" src="assets/imgs/Project_3.jpg" class="img-responsive rounded"
+                            alt="Project 2 image">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h5>
+                                    <p class="font-weight-normal">Category: UI/UX Templates</p>
+                            </span>
+                        </span>
+                    </a>
+
+                    <p><a href="https://www.figma.com/file/9cQhf5I5HaWwhMXM0yKXZd/Untitled?type=design&node-id=1-336&mode=design"
+                            target="_blank">
+                            Figma link
+                        </a></p>
+                </div>
+            </div>
+            <h3 class="mt-4">Pure JS Projects</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="./js_projects/todo/index.html" class="portfolio-card" target="_blank">
+                        <img src="./assets/imgs/ToDo-js.jpg" class="portfolio-card-img" alt="Monkey game">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Development</h4>
+                                <p class="font-weight-normal">Category: Pure JS Projects</p>
+                            </span>
+                        </span>
+                    </a>
+
+                </div>
+                <div class="col-md-4">
+                    <a href="./js_projects/game_monkey/index.html" class="portfolio-card" target="_blank">
+                        <img class="portfolio-card-img" src="assets/imgs/monkey.jpg" class="img-responsive rounded"
+                            alt="Monkey game">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Development</h4>
+                                <p class="font-weight-normal">Category: Pure JS Projects</p>
+                            </span>
+                        </span>
+                    </a>
+
+                </div>
+                <div class="col-md-4">
+                    <a href="./js_projects/calculator/index.html" class="portfolio-card" target="_blank">
+                        <img class="portfolio-card-img" src="assets/imgs/calc.jpg" class="img-responsive rounded"
+                            alt="Project 2 image">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h5>
+                                    <p class="font-weight-normal">Category: Pure JS Projects</p>
+                            </span>
+                        </span>
+                    </a>
+
+                </div>
+            </div>
+            <h3 class="mt-4">React Apps</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="https://www.youtube.com/watch?v=s0YNfTommms&t=8s" class="portfolio-card" target="_blank">
+                        <img src="assets/imgs/Task-Manager.jpg" class="portfolio-card-img" alt="Task Manager">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Front-end development</h5>
+                                    <p class="font-weight-normal">Category: React Apps</p>
+                            </span>
+                        </span>
+                    </a>
+
+                    <p><a href="https://github.com/khachatryanhovhannes/Task-Manager" target="_blank">
+                            Github Repository
+                        </a></p>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://github.com/khachatryanhovhannes/movie-react" class="portfolio-card"
+                        target="_blank">
+                        <img class="portfolio-card-img" src="assets/imgs/Movie.jpg" class="img-responsive rounded"
+                            alt="Movie app">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Front-end development</h5>
+                                    <p class="font-weight-normal">Category: React Apps</p>
+                            </span>
+                        </span>
+                    </a>
+
+                    <p><a href="https://github.com/khachatryanhovhannes/movie-react" target="_blank">
+                            Github Repository
+                        </a></p>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.youtube.com/watch?v=_npO6DKbmdU" class="portfolio-card" target="_blank">
+                        <img class="portfolio-card-img" src="assets/imgs/ToDo.jpg" class="img-responsive rounded"
+                            alt="To Do List">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Front-end development</h5>
+                                    <p class="font-weight-normal">Category: React Apps</p>
+                            </span>
+                        </span>
+                    </a>
+
+                    <p><a href="https://github.com/khachatryanhovhannes/todo" target="_blank">
+                            Github Repository
+                        </a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-sm bg-primary">
+        <div class="container text-center text-sm-left">
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-light">Want to work with me?</h6>
+                    <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
+                </div>
+                <div class="col-sm offset-sm-2 offset-md-3">
+                    <button class="btn btn-lg my-font btn-light rounded"
+                        onclick="window.open('https://www.linkedin.com/in/hovhannes-khachatryan-bb6705249/', '_blank');">Hire
+                        Me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="testmonial">
+        <div class="container text-center">
+            <h6 class="section-title mb-6">Recommendations</h6>
+            <div class='sk-ww-linkedin-recommendations' data-embed-id='249468'></div>
+    </section>
     <div class="container">
-        <header class="header">
-            <div class="nameAndLogo">
-                <a href="index.html">
-                    <img src="./public/images/home.png" alt="H" class="logo">
-                    <div class="name">Khachatryan <br> Hovhannes</div>
-                </a>
-            </div>
-            <div class="flags">
-                <img onclick="window.location.href = './indexAm.html'" src="./public/images/flag-armenia.png" alt=""
-                    class="arm">
-                <img src="./public/images/uk_united_kingdom_britain_british_flag-1024.webp" alt="" class="eng">
-            </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#education">EDUCATION</a></li>
-                    <li><a href="#trainings">TRAININGS</a></li>
-                    <li><a href="#volutering">VOLUNTEERING</a></li>
-                    <li><a href="#works">WORKS</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="main">
-            <section class="welcome">
-                <h1>WELCOME TO MY PORTFOLIO</h1>
-            </section>
-            <section class="life">
-                <h2>About me</h2>
-                <img src="./public/images/338960081_746007887113486_8608024960385265348_n.jpg" alt="">
-                <p>My name is Hovannes, I am 21 years old. I study at the Gyumri branch of the European University of
-                    Armenia in the department of "Jurisprudence". Since childhood, I have loved mathematics and the
-                    latest technologies. I took a number of programming courses, thanks to which I gained a lot of
-                    knowledge in this area. He also participated in a number of informal educational programs, gained
-                    knowledge from various fields. In 2020, I went to compulsory military service and participated in
-                    the Artsakh War. I was discharged in 2022. After demobilization, I decided not to be content with
-                    university knowledge and simultaneously engage in programming. I am currently studying the "full
-                    stack" of programming in GITC.  I like to be self-educated. I know MS Office and I can work with
-                    git-github/gitlab. I also know html, css, js. you can see my work in the <a href="#works">"Work"</a>
-                    section. </p>
-                <div style="clear: both;"></div>
-            </section>
-            <section class="education" id="education">
-                <h3>EDUCATION</h3>
-                <p>In 2008-2020, I studied at the secondary school in the village of Kamo, Shirak region. Participated
-                    in Yandex School in 2018-2019. In 2016-2020, I visited the Gyumri Technology Center. Since 2022, I
-                    have been studying at the department of "Jurisprudence" of the Gyumri branch of the European
-                    University.</p>
-            </section>
-            <section class="trainings" id="trainings">
-                <h3>TRAININGS</h3>
-                <table>
-                    <tr>
-                        <th>Organization</th>
-                        <th>Subject</th>
-                        <th>Time</th>
-                    </tr>
-                    <tr>
-                        <td>Peace dialogue</td>
-                        <td>journalism</td>
-                        <td>2019-2020</td>
-                    </tr>
-                    <tr>
-                        <td>Journalists' club "Aparez".</td>
-                        <td>Environmental problems of mining</td>
-                        <td>15/07/2019 – 20/07/2019</td>
-                    </tr>
-                    <tr>
-                        <td>Journalists' club "Aparez".</td>
-                        <td>Local self-government in Armenia. situation, challenges and issues</td>
-                        <td>05/07/2019 – 10/07/2019</td>
-                    </tr>
-                    <tr>
-                        <td>World Vision Armenia</td>
-                        <td>Creation of social programs, marketing</td>
-                        <td>07/09/2018 – 09/09/2018</td>
-                    </tr>
-                    <tr>
-                        <td>Armenian Caritas</td>
-                        <td>Capacity development of club managers</td>
-                        <td>26/07/2018 – 28/07/2018</td>
-                    </tr>
-                    <tr>
-                        <td>Armenian Caritas</td>
-                        <td>HIV/AIDS prevention among young people</td>
-                        <td>22/03/2017 – 24/03/2017</td>
-                    </tr>
-                </table>
-            </section>
-            <section class="volutering" id="volutering">
-                <h1>VOLUNTARY ACTIVITY</h1>
-                <div>
-
-                    <article class="caritas">
-                        <h2>Armenian Caritas</h2>
-                        <p>I got acquainted with the organization at school, during the lesson.
-                            I was chosen as the most active participant and got the opportunity to enter and later
-                            appear as a teacher. After some time, I went through a retraining as a club manager and
-                            collaborated with the company for 2 years</p>
-                    </article>
-                    <article class="vvArmenia">
-                        <h2>World Vision Armenia</h2>
-                        <p>For about 3 years I worked on a variety of projects. Represented grant programs and won
-                            several of them</p>
-                    </article>
-                    <article class="shirvan">
-                        <h2>Shirvanyan Youth Center</h2>
-                        <p>I started cooperation with the company in the spring of 2020, teaching history at school. Due
-                            to ''Covid'', the cooperation was interrupted and lasted only a few months</p>
-                    </article>
-                </div>
-            </section>
-            <section class="works" id="works">
-                <h1>MY WORKS</h1>
-                <div class="htmlCss">
-                    <h2>HTML/CSS responsive design</h2>
-                    <div class="project">
-                        <a href="https://www.figma.com/file/9YtQWLdjWAYzefwe2b3ddk/Untitled?node-id=0-1&t=QXDgwcDaFNpoAcBn-0"
-                            target="_blank">
-                            Project 1/Figma
-                        </a>
-                        <span>-</span>
-                        <a href="./html_projects/project_1/index.html" target="_blank">
-                            Coding
-                        </a>
-                    </div>
-                    <div class="project">
-
-                        <a href="https://www.figma.com/file/eV9Ke3mVlmMJJn8WyuRtUO/Untitled?node-id=1-2654&t=wWzJWLRZGy2boMLE-0"
-                            target="_blank">
-                            Project 2/Figma
-                        </a>
-                        <span>-</span>
-                        <a href="./html_projects/project_2/index.html" target="_blank">
-                            Coding</a>
-                    </div>
-                    <div class="project">
-                        <a href="https://www.figma.com/file/9cQhf5I5HaWwhMXM0yKXZd/Untitled?node-id=1-336&t=lrZrN1fAFnAcJ48c-0"
-                            target="_blank">
-                            Project 3/Figma
-                        </a>
-                        <span>-</span>
-                        <a href="./html_projects/project_3/index.html" target="_blank">
-                            Coding</a>
-                    </div>
-                    <div class="project">
-                        <a href="https://www.figma.com/file/PVTgXPivdRWGFc7r3NqIEg/Untitled?type=design&node-id=0-1&t=MlZCcDelxRwoUulg-0"
-                            target="_blank">
-                            Project 4/Figma
-                        </a>
-                        <span>-</span>
-                        <a href="./html_projects/project_4/index.html" target="_blank">
-                            Coding</a>
-                    </div>
-                </div>
-                
-
-                <div class="js">
-                    <h2>JavaScript</h2>
-                    <a href="./js_projects/calculator/index.html" target="_blank">Calculator</a>
-                    <a href="./js_projects/virtual_keyboard/index.html" target="_blank">Virtual keyboard</a><br>
-                    <a href="./js_projects/game_monkey/index.html" target="_blank">Monkey's game</a>
-                    <a href="./js_projects/todo/index.html" target="_blank">Todo List</a>
-                </div>
-            </section>
-        </main>
         <footer class="footer">
-            <div class="social">
-                <h1>Do you like my portfolio?</h1>
-                <h3>Follow me on social media.</h3>
-                <div class="socialLinks">
-                    <a href="https://www.facebook.com/profile.php?id=100011098380942" target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/hovhannes_khachatrian/" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/hovhannes-khachatryan-bb6705249" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </div>
-                <div class="con">
-                    <h1>For questions or orders։ khachatryanhovhannes02@gmail.com</h1>
-                </div>
-            </div>
-            <nav class="footerNav">
-
-                <ul>
-
-                    <li><a href="#education">EDUCATION</a></li>
-                    <div class="g">|</div>
-                    <li><a href="#trainings">TRAININGS</a></li>
-                    <div class="g">|</div>
-                    <li><a href="#volutering">VOLUNTEERING</a></li>
-                    <div class="g">|</div>
-                    <li><a href="#works">WORKS</a></li>
-                </ul>
-            </nav>
-            <div class="copyRight">
-                Copyright © 2023 - Hovhannes Khachatryan <br>
-                Photos or other materials posted on the site are the property of the author.
+            <p class="mb-0">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; Hovhannes Khachatryan
+            </p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="https://www.facebook.com/profile.php?id=100011098380942" class="link" target="_blank"><i class="ti-facebook"></i></a>
+                <a href="https://www.instagram.com/hovhannes_khachatrian/" class="link" target="_blank"><i class="ti-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/hovhannes-khachatryan-bb6705249/" class="link" target="_blank"><i class="ti-linkedin"></i></a>
+                <a href="https://github.com/khachatryanhovhannes" class="link" target="_blank"><i class="ti-github"></i></a>
             </div>
         </footer>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
     </div>
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/js/meyawo.js"></script>
+    <script src='https://widgets.sociablekit.com/linkedin-recommendations/widget.js' async defer></script>
 
-    <script>
-        let mybutton = document.getElementById("myBtn");
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-    <script src="https://kit.fontawesome.com/b67d1921a9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
