@@ -1,0 +1,135 @@
+.expertise {
+  min-height: 100vh;
+  padding: 10rem 12% 10rem;
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+  color: white;
+  background-color: var(--second-bg-color);
+}
+
+.expertiseContent {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: left;
+  margin-top: 3rem;
+}
+
+.heading {
+  font-size: 8rem;
+  text-align: center;
+  margin: 1rem auto;
+  color: white;
+}
+
+.subheading {
+  font-size: 3rem;
+  padding: 40px 20px 10px;
+}
+
+.timelineItems {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.timelineItems::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: var(--main-color);
+}
+
+.timelineItem {
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.timelineFullContent {
+  margin-left: 20px;
+}
+
+.timelineItem:last-child {
+  margin-bottom: 0;
+}
+
+.timelineDot {
+  height: 21px;
+  width: 21px;
+  background-color: var(--main-color);
+  box-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color);
+  position: absolute;
+  left: -8px;
+  top: 10px;
+  border-radius: 50%;
+}
+
+.timelineCompanyName {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.timelineDate {
+  font-size: 18px;
+  font-weight: 800;
+  color: white;
+  margin: 6px 0 15px;
+}
+
+.timelineContent {
+  background-color: var(--bg-color);
+  border: 3px solid var(--main-color);
+  padding: 30px 50px;
+  border-radius: 4rem;
+  box-shadow: 0 0 5px var(--main-color);
+  transition: 0.3s ease-in-out;
+}
+
+.timelineContent:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px var(--main-color);
+}
+
+.timelineContent h3 {
+  font-size: 20px;
+  color: white;
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+
+.timelineContent p {
+  font-size: 16px;
+  color: white;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.descriptionList {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+@media (max-width: 991px) {
+  .expertise {
+    padding: 10rem 3% 2rem;
+  }
+}
+
+@media (max-width: 895px) {
+  .heading {
+    font-size: 5rem;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .timelineContent {
+    padding: 15px;
+  }
+}
