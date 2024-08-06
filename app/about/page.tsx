@@ -13,7 +13,9 @@ function About() {
           focus on delivering high-quality, scalable solutions tailored to meet
           the unique needs of each project.
         </p>
-        <h2 className={classes.subheading}>My Journey</h2>
+        <h2 className={classes.subheading} id="journey">
+          My Journey
+        </h2>
         <p>
           I embarked on my development journey with a solid foundation in HTML,
           CSS, and JavaScript, which I expanded through hands-on experience and

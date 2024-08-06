@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { NAV_ITEMS } from "@/constants";
-import { IoMenu } from "react-icons/io5";
+import { IoClose, IoMenu } from "react-icons/io5";
 import classes from "./header.module.css";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -32,6 +32,20 @@ function Header() {
       <IoMenu className={classes.mobileNav} onClick={handleNavBarShow} />
       {showNavbar && (
         <nav className={classes.nav}>
+          <div
+            style={{
+              textAlign: "left",
+              width: "100%",
+            }}
+          >
+            {isMobileNav && (
+              <IoClose
+                className={classes.mobileNav}
+                onClick={handleNavBarShow}
+              />
+            )}
+          </div>
+
           {NAV_ITEMS.map((item) => {
             const isActive = item.href === pathname;
 

@@ -80,7 +80,10 @@
     border-left: 2px solid var(--main-color);
     border-bottom: 2px solid var(--main-color);
     flex-direction: column;
+    gap: 10px;
   }
+
+
 
   .logo{
     display: flex;

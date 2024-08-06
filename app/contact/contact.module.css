@@ -82,3 +82,20 @@
     gap: 0;
   }
 }
+.inputWrapper {
+  position: relative;
+}
+
+.error {
+  color: red;
+  font-size: 1.4rem;
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  width: 100%;
+}
+
+.inputWrapper input,
+.inputWrapper textarea {
+  border-color: var(--main-color);
+}
