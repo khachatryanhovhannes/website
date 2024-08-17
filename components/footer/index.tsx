@@ -72,7 +72,8 @@ function Footer() {
         </div>
       </div>
       <p className={classes.copy}>
-        &copy; 2023 Khachatryan Hovhannes. All rights reserved.
+        &copy; {new Date().getFullYear()} Khachatryan Hovhannes. All rights
+        reserved.
       </p>
     </footer>
   );

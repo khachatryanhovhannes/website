@@ -4,7 +4,7 @@ import classes from "./home.module.css";
 import Image from "next/image";
 import hero from "../public/hero.png";
 import { IoLogoFacebook, IoLogoLinkedin, IoLogoGithub } from "react-icons/io";
-import { IoLogoInstagram } from "react-icons/io5";
+import { IoLogoInstagram, IoLogoMedium } from "react-icons/io5";
 
 export default function Home() {
   return (
@@ -46,6 +46,12 @@ export default function Home() {
             target="_blank"
           >
             <IoLogoInstagram />
+          </Link>
+          <Link
+            href="https://khachatryanhovhannes02.medium.com/"
+            target="_blank"
+          >
+            <IoLogoMedium />
           </Link>
         </div>
 
