@@ -6,6 +6,7 @@ import {
   IoLogoInstagram,
   IoLogoLinkedin,
 } from "react-icons/io";
+import { IoLogoMedium } from "react-icons/io5";
 
 function Footer() {
   return (
@@ -67,6 +68,12 @@ function Footer() {
               target="_blank"
             >
               <IoLogoInstagram />
+            </Link>
+            <Link
+              href="https://khachatryanhovhannes02.medium.com/"
+              target="_blank"
+            >
+              <IoLogoMedium />
             </Link>
           </div>
         </div>
